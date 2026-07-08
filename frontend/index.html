@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NEPSE Live &mdash; Floor Feed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0F1115;
+    --surface: #171A21;
+    --surface-2: #1E222B;
+    --border: #2A2F3A;
+    --text: #E8E6E1;
+    --muted: #8B92A0;
+    --accent: #DC143C;
+    --up: #2FBF71;
+    --down: #E5484D;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .brand .mark {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: inline-block;
+    margin-right: 2px;
+  }
+
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 13px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--muted);
+  }
+
+  .pulse.open {
+    background: var(--up);
+    box-shadow: 0 0 0 0 rgba(47,191,113, 0.6);
+    animation: pulse 1.8s infinite;
+  }
+
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(47,191,113, 0.5); }
+    70%  { box-shadow: 0 0 0 8px rgba(47,191,113, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(47,191,113, 0); }
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 28px;
+  }
+
+  .table-wrap {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead th {
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    font-weight: 500;
+    padding: 12px 16px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+  }
+
+  thead th:first-child, tbody td:first-child {
+    text-align: left;
+  }
+
+  tbody td {
+    padding: 11px 16px;
+    text-align: right;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13.5px;
+    font-variant-numeric: tabular-nums;
+    border-bottom: 1px solid var(--border);
+    transition: background-color 0.6s ease;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  tbody tr:hover { background: var(--surface-2); }
+
+  .symbol {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .up { color: var(--up); }
+  .down { color: var(--down); }
+  .flat { color: var(--muted); }
+
+  .flash-up { background-color: rgba(47,191,113,0.15) !important; }
+  .flash-down { background-color: rgba(229,72,77,0.15) !important; }
+
+  .empty-state {
+    padding: 48px 16px;
+    text-align: center;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+  }
+
+  footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 28px 28px;
+    color: var(--muted);
+    font-size: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <h1><span class="mark"></span>NEPSE Live</h1>
+  </div>
+  <div class="status">
+    <span class="pulse" id="pulse"></span>
+    <span id="status-text">connecting&hellip;</span>
+  </div>
+</header>
+
+<main>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>LTP</th>
+          <th>Change</th>
+          <th>% Chg</th>
+          <th>Qty</th>
+        </tr>
+      </thead>
+      <tbody id="rows">
+        <tr><td colspan="5" class="empty-state">Loading&hellip;</td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  Data refreshes every 30s from Supabase &middot; sourced from NEPSE &middot; educational/personal use only, not investment advice
+</footer>
+
+<script>
+  // --- Fill these in with your Supabase project's values ---
+  const SUPABASE_URL = "https://YOUR-PROJECT.supabase.co";
+  const SUPABASE_ANON_KEY = "YOUR_ANON_KEY_HERE";
+  // The anon key is safe to expose in frontend code — it can only read,
+  // because we only granted SELECT policies in schema.sql.
+
+  const REFRESH_MS = 30000;
+  const previousPrices = {};
+
+  async function fetchStatus() {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/nepse_market_status?select=is_open,updated_at`, {
+      headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
+    });
+    const data = await res.json();
+    const pulse = document.getElementById("pulse");
+    const statusText = document.getElementById("status-text");
+    if (data && data[0]) {
+      const isOpen = data[0].is_open;
+      pulse.classList.toggle("open", isOpen);
+      statusText.textContent = isOpen ? "market open" : "market closed";
+    }
+  }
+
+  async function fetchPrices() {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/nepse_live_prices?select=*&order=symbol.asc`, {
+      headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
+    });
+    const rows = await res.json();
+    renderRows(rows);
+  }
+
+  function renderRows(rows) {
+    const tbody = document.getElementById("rows");
+    if (!rows || rows.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="5" class="empty-state">No data yet &mdash; run the scraper to populate this table.</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = "";
+    rows.forEach(r => {
+      const tr = document.createElement("tr");
+      const changeClass = r.point_change > 0 ? "up" : r.point_change < 0 ? "down" : "flat";
+      const arrow = r.point_change > 0 ? "\u25B2" : r.point_change < 0 ? "\u25BC" : "";
+
+      tr.innerHTML = `
+        <td class="symbol">${r.symbol}</td>
+        <td class="ltp-cell">${formatNum(r.ltp)}</td>
+        <td class="${changeClass}">${arrow} ${formatNum(r.point_change)}</td>
+        <td class="${changeClass}">${formatNum(r.percent_change)}%</td>
+        <td>${formatNum(r.total_qty)}</td>
+      `;
+
+      const prev = previousPrices[r.symbol];
+      if (prev !== undefined && prev !== r.ltp) {
+        const ltpCell = tr.querySelector(".ltp-cell");
+        ltpCell.classList.add(r.ltp > prev ? "flash-up" : "flash-down");
+        setTimeout(() => ltpCell.classList.remove("flash-up", "flash-down"), 900);
+      }
+      previousPrices[r.symbol] = r.ltp;
+
+      tbody.appendChild(tr);
+    });
+  }
+
+  function formatNum(n) {
+    if (n === null || n === undefined) return "&mdash;";
+    return Number(n).toLocaleString("en-US", { maximumFractionDigits: 2 });
+  }
+
+  async function tick() {
+    try {
+      await Promise.all([fetchStatus(), fetchPrices()]);
+    } catch (e) {
+      document.getElementById("status-text").textContent = "connection error";
+      console.error(e);
+    }
+  }
+
+  tick();
+  setInterval(tick, REFRESH_MS);
+</script>
+
+</body>
+</html>
