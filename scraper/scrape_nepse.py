@@ -1,7 +1,7 @@
 """
 NEPSE Live Price Scraper -> Supabase
 -------------------------------------
-Fetches live trades from NEPSE and upserts them into a Supabase table.
+Fetches today's price data from NEPSE and upserts it into a Supabase table.
 Designed to be run either:
   - locally, for testing (python scrape_nepse.py)
   - on a schedule via GitHub Actions (see .github/workflows/scrape.yml)
@@ -11,11 +11,17 @@ Required environment variables:
   SUPABASE_SERVICE_KEY  the SERVICE ROLE key (NOT the anon key) — keep secret,
                         never put this in frontend code or commit it to git.
 
---- IMPORTANT CALIBRATION NOTE ---
-The exact JSON field names NEPSE's API returns for each trade record are
-not yet confirmed. FIELD_MAP below has best-guess candidates for each value
-and tries them in order. Run with --debug once to print a raw record, check
-the real keys, then trim FIELD_MAP to just the correct one for reliability.
+Field names below are CONFIRMED against a real response (2026-07-09), e.g.:
+{
+  'symbol': 'ACLBSL', 'closePrice': 925.0, 'previousDayClosePrice': 925.0,
+  'totalTradedQuantity': 954, 'totalTradedValue': 869125.2,
+  'lastUpdatedPrice': 925.0, 'totalTrades': 30, 'marketCapitalization': 3396.08,
+  'fiftyTwoWeekHigh': 1240.0, 'fiftyTwoWeekLow': 827.9,
+  'lastUpdatedTime': '...', 'businessDate': '2026-07-08', ...
+}
+
+NEPSE does NOT provide point/percent change directly — we calculate both
+from closePrice vs previousDayClosePrice.
 """
 
 import os
@@ -26,23 +32,6 @@ from datetime import datetime
 from nepse_scraper import NepseScraper
 from supabase import create_client
 
-# Candidate key names to try, in order, for each field we care about.
-# Once you confirm the real key (via --debug), reduce each list to one item.
-FIELD_MAP = {
-    "symbol": ["symbol", "securitySymbol", "Symbol"],
-    "ltp": ["lastTradedPrice", "ltp", "LTP", "closePrice"],
-    "point_change": ["pointChange", "change", "netChange"],
-    "percent_change": ["percentageChange", "perChange", "percentChange"],
-    "total_qty": ["totalTradedQuantity", "qty", "totalTradeQuantity", "sharesTraded"],
-}
-
-
-def extract_field(record: dict, field: str):
-    for key in FIELD_MAP[field]:
-        if key in record:
-            return record[key]
-    return None
-
 
 def get_supabase():
     url = os.environ.get("SUPABASE_URL")
@@ -52,44 +41,53 @@ def get_supabase():
     return create_client(url, key)
 
 
+def build_row(t: dict) -> dict:
+    symbol = t.get("symbol")
+    ltp = t.get("lastUpdatedPrice") or t.get("closePrice")
+    prev_close = t.get("previousDayClosePrice")
+
+    point_change = None
+    percent_change = None
+    if ltp is not None and prev_close is not None:
+        point_change = round(ltp - prev_close, 2)
+        if prev_close != 0:
+            percent_change = round((point_change / prev_close) * 100, 2)
+
+    return {
+        "symbol": symbol,
+        "ltp": ltp,
+        "point_change": point_change,
+        "percent_change": percent_change,
+        "total_qty": t.get("totalTradedQuantity"),
+        "updated_at": datetime.utcnow().isoformat(),
+    }
+
+
 def run(debug: bool = False):
     client = NepseScraper(verify_ssl=False)
 
     is_open = client.is_market_open()
     print(f"[{datetime.now()}] Market open: {is_open}")
 
-    trades = client.get_live_trades()
+    trades = client.get_today_price()
 
     if debug:
         print("Raw sample record:")
-        print(trades[0] if trades else "No trades returned.")
+        print(trades[0] if trades else "No data returned.")
         return
 
     if not trades:
-        print("No live trade data returned — market likely closed. Skipping DB write.")
+        print("No price data returned — check connection. Skipping DB write.")
         return
 
-    rows = []
-    for t in trades:
-        symbol = extract_field(t, "symbol")
-        if not symbol:
-            continue
-        rows.append({
-            "symbol": symbol,
-            "ltp": extract_field(t, "ltp"),
-            "point_change": extract_field(t, "point_change"),
-            "percent_change": extract_field(t, "percent_change"),
-            "total_qty": extract_field(t, "total_qty"),
-            "updated_at": datetime.utcnow().isoformat(),
-        })
+    rows = [build_row(t) for t in trades if t.get("symbol")]
 
     if not rows:
-        print("Parsed zero rows — field names likely don't match. Run with --debug.")
+        print("Parsed zero rows — NEPSE may have changed field names again. Run with --debug.")
         return
 
     supabase = get_supabase()
 
-    # Upsert: insert new rows, overwrite existing ones by symbol (primary key)
     supabase.table("nepse_live_prices").upsert(rows).execute()
     supabase.table("nepse_market_status").upsert({
         "id": 1,
