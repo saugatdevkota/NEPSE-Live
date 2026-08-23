@@ -1,10 +1,9 @@
-# NEPSE Live — Scheduled Scraper + DB + Website
+# NEPSE Live — Scheduled Scraper + Static Website
 
-Architecture: `GitHub Actions scraper -> Supabase -> static frontend`
+Primary architecture: `GitHub Actions scraper -> frontend/data.json -> static frontend`
 
-The scraper stores the latest price for each symbol, records intraday history
-while the market is open, and updates a single market-status row. The frontend
-reads those tables through Supabase's public read-only API.
+Supabase is optional. Without it, the scraper writes the latest market snapshot
+straight into `frontend/data.json` and the frontend reads that file.
 
 ## Project structure
 
@@ -26,7 +25,7 @@ pip install -r scraper/requirements.txt
 python scraper/scrape_nepse.py --debug
 ```
 
-Debug mode prints one raw record and does not write to Supabase. Confirm that
+Debug mode prints one raw record and does not write any data. Confirm that
 the response still contains `symbol`, `lastUpdatedPrice` or `closePrice`,
 `previousDayClosePrice`, and `totalTradedQuantity`.
 
@@ -34,7 +33,23 @@ The scraper currently disables TLS certificate verification for the NEPSE
 client because that endpoint has had certificate-chain problems. Do not treat
 the scraped response as a trusted or licensed market feed.
 
-## 2. Set up Supabase
+## 2. Generate the static data
+
+```bash
+python scraper/scrape_nepse.py
+```
+
+This updates `frontend/data.json`. Serve the project through a local HTTP
+server, such as VS Code Live Server, and open `frontend/index.html`. Opening the
+HTML through a `file://` URL will not allow it to fetch the JSON file.
+
+## 3. Optional: enable Supabase
+
+Install the optional dependency:
+
+```bash
+pip install -r scraper/requirements-supabase.txt
+```
 
 1. Create a Supabase project.
 2. Run `sql/schema.sql` in the SQL Editor. The script is safe to rerun.
@@ -45,9 +60,10 @@ the scraped response as a trusted or licensed market feed.
 The schema enables row-level security with public SELECT access. Writes require
 the service-role key.
 
-## 3. Run the scraper against Supabase
+When both `SUPABASE_URL` and `SUPABASE_SERVICE_KEY` are present, the same
+scraper run writes the static JSON first and then syncs Supabase.
 
-PowerShell:
+### PowerShell
 
 ```powershell
 $env:SUPABASE_URL = "https://xxxx.supabase.co"
@@ -55,7 +71,7 @@ $env:SUPABASE_SERVICE_KEY = "your-service-role-key"
 python scraper/scrape_nepse.py
 ```
 
-Bash:
+### Bash
 
 ```bash
 export SUPABASE_URL="https://xxxx.supabase.co"
@@ -63,27 +79,27 @@ export SUPABASE_SERVICE_KEY="your-service-role-key"
 python scraper/scrape_nepse.py
 ```
 
-## 4. Configure GitHub Actions
+## 4. Scheduled updates
 
-Add `SUPABASE_URL` and `SUPABASE_SERVICE_KEY` as repository Actions secrets.
 The workflow runs every 15 minutes from 11:00 through 15:00 Nepal time,
-Sunday–Thursday, and can also be started manually.
+Sunday–Thursday. It refreshes and commits `frontend/data.json`; no database
+secrets are required. Supabase can still be synced from another configured run.
 
 NEPSE schedules and holidays can change, so review the cron schedule when
 trading hours change.
 
 ## 5. Deploy the frontend
 
-Set `SUPABASE_URL` and `SUPABASE_ANON_KEY` in `frontend/index.html`, then deploy
-the `frontend/` directory to GitHub Pages, Netlify, Vercel, or another static
-host. There is no build step.
+Deploy the `frontend/` directory to GitHub Pages, Netlify, Vercel, or another
+static host. There is no build step. Leave the Supabase constants blank unless
+you want database fallback and history charts.
 
 ## Data behavior
 
-- `nepse_live_prices` keeps one latest snapshot per symbol.
-- `nepse_market_status` keeps the latest reported open/closed state.
-- `nepse_price_history` appends samples only while the market reports open.
-- The chart displays the newest 500 stored samples for a symbol.
+- `frontend/data.json` keeps the latest snapshot and market status.
+- Watchlists work locally in the browser without Supabase.
+- With optional Supabase, history is stored while the market is open and charts
+  display the newest 500 samples.
 
 This is unofficial scraped data intended for educational or personal use. Do
 not rely on it alone for trading decisions.

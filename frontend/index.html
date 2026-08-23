@@ -241,7 +241,7 @@
 </main>
 
 <footer>
-  Data refreshes every 30s from Supabase &middot; sourced from NEPSE &middot; educational/personal use only, not investment advice &middot; click a row for its price history
+  Reads the latest generated snapshot &middot; sourced from NEPSE &middot; educational/personal use only, not investment advice &middot; history charts require optional Supabase
 </footer>
 
 <div class="modal-backdrop" id="modal-backdrop">
@@ -257,11 +257,10 @@
 </div>
 
 <script>
-  // --- Fill these in with your Supabase project's values ---
-  const SUPABASE_URL = "https://xtjzbrhxpcdmwnxjpyzq.supabase.co";
-  const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh0anpicmh4cGNkbXdueGpweXpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM0NzkwMzQsImV4cCI6MjA5OTA1NTAzNH0.SHJuY9vyF6pBJQ0zaIp84v74D21Cr8JPkyEONOOy4Dc";
-
-
+  // Optional: leave blank to use frontend/data.json only.
+  const SUPABASE_URL = "";
+  const SUPABASE_ANON_KEY = "";
+  const HAS_SUPABASE = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
   const REFRESH_MS = 30000;
   const previousPrices = {};
   let watchlistOnly = false;
@@ -288,10 +287,8 @@
     saveWatchlist(list);
   }
 
-  async function fetchJson(url) {
-    const res = await fetch(url, {
-      headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
-    });
+  async function fetchJson(url, headers = {}) {
+    const res = await fetch(url, { headers, cache: "no-store" });
     if (!res.ok) {
       let detail = "";
       try {
@@ -300,27 +297,45 @@
       } catch {
         // The status code is enough when the response body is not JSON.
       }
-      throw new Error(`Supabase request failed (${res.status})${detail ? `: ${detail}` : ""}`);
+      throw new Error(`Data request failed (${res.status})${detail ? `: ${detail}` : ""}`);
     }
     return res.json();
   }
 
-  async function fetchStatus() {
-    const data = await fetchJson(
-      `${SUPABASE_URL}/rest/v1/nepse_market_status?select=is_open,updated_at&id=eq.1`
-    );
+  function updateMarketStatus(isOpen, updatedAt) {
     const pulse = document.getElementById("pulse");
     const statusText = document.getElementById("status-text");
+    pulse.classList.toggle("open", Boolean(isOpen));
+    statusText.textContent = isOpen ? "market open" : "market closed";
+    statusText.title = updatedAt
+      ? `Data updated ${new Date(updatedAt).toLocaleString()}`
+      : "Update time unavailable";
+  }
+
+  async function fetchStaticSnapshot() {
+    const data = await fetchJson(`data.json?t=${Date.now()}`);
+    if (!data || !Array.isArray(data.prices)) {
+      throw new Error("frontend/data.json has an unexpected format");
+    }
+    latestRows = data.prices;
+    updateMarketStatus(data.is_open, data.updated_at);
+    renderRows(latestRows);
+  }
+
+  async function fetchStatus() {
+    const data = await fetchJson(
+      `${SUPABASE_URL}/rest/v1/nepse_market_status?select=is_open,updated_at&id=eq.1`,
+      { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
+    );
     if (data && data[0]) {
-      const isOpen = data[0].is_open;
-      pulse.classList.toggle("open", isOpen);
-      statusText.textContent = isOpen ? "market open" : "market closed";
+      updateMarketStatus(data[0].is_open, data[0].updated_at);
     }
   }
 
   async function fetchPrices() {
     const rows = await fetchJson(
-      `${SUPABASE_URL}/rest/v1/nepse_live_prices?select=*&order=symbol.asc`
+      `${SUPABASE_URL}/rest/v1/nepse_live_prices?select=*&order=symbol.asc`,
+      { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
     );
     if (!Array.isArray(rows)) throw new Error("Unexpected price response from Supabase");
     latestRows = rows;
@@ -385,6 +400,20 @@
     });
   }
 
+  function renderPriceError(error) {
+    const tbody = document.getElementById("rows");
+    tbody.textContent = "";
+    const tr = document.createElement("tr");
+    const td = makeCell(
+      "Data unavailable — run the scraper to generate frontend/data.json.",
+      "empty-state"
+    );
+    td.colSpan = 6;
+    td.title = error?.message || "Unknown backend error";
+    tr.appendChild(td);
+    tbody.appendChild(tr);
+  }
+
   function makeCell(text, className = "") {
     const td = document.createElement("td");
     if (className) td.className = className;
@@ -408,13 +437,18 @@
 
     const container = document.getElementById("chart-container");
     container.className = "chart-empty";
+    if (!HAS_SUPABASE) {
+      container.textContent = "Price history requires the optional Supabase backend.";
+      return;
+    }
     container.textContent = "Loading history…";
 
     let history;
     try {
       const encodedSymbol = encodeURIComponent(symbol);
       history = await fetchJson(
-        `${SUPABASE_URL}/rest/v1/nepse_price_history?symbol=eq.${encodedSymbol}&select=ltp,recorded_at&order=recorded_at.desc&limit=500`
+        `${SUPABASE_URL}/rest/v1/nepse_price_history?symbol=eq.${encodedSymbol}&select=ltp,recorded_at&order=recorded_at.desc&limit=500`,
+        { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
       );
     } catch (error) {
       if (requestId !== chartRequestId) return;
@@ -496,10 +530,33 @@
 
   async function tick() {
     try {
-      await Promise.all([fetchStatus(), fetchPrices()]);
-    } catch (e) {
-      document.getElementById("status-text").textContent = "connection error";
-      console.error(e);
+      await fetchStaticSnapshot();
+      return;
+    } catch (staticError) {
+      if (!HAS_SUPABASE) {
+        renderPriceError(staticError);
+        const statusText = document.getElementById("status-text");
+        statusText.textContent = "data unavailable";
+        statusText.title = staticError.message;
+        console.error("Static data request failed:", staticError);
+        return;
+      }
+      console.warn("Static data unavailable; trying Supabase:", staticError);
+    }
+
+    const [statusResult, pricesResult] = await Promise.allSettled([fetchStatus(), fetchPrices()]);
+
+    if (statusResult.status === "rejected") {
+      const statusText = document.getElementById("status-text");
+      statusText.textContent = "backend unavailable";
+      statusText.title = statusResult.reason?.message || "Could not reach Supabase";
+      document.getElementById("pulse").classList.remove("open");
+      console.error("Market status request failed:", statusResult.reason);
+    }
+
+    if (pricesResult.status === "rejected") {
+      renderPriceError(pricesResult.reason);
+      console.error("Price request failed:", pricesResult.reason);
     }
   }
 
