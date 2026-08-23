@@ -6,6 +6,7 @@
 <title>NEPSE Live &mdash; Floor Feed</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
   :root {
     --bg: #0F1115;
@@ -17,6 +18,7 @@
     --accent: #DC143C;
     --up: #2FBF71;
     --down: #E5484D;
+    --gold: #E8B84B;
   }
 
   * { box-sizing: border-box; }
@@ -35,70 +37,57 @@
     justify-content: space-between;
     padding: 20px 28px;
     border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
-  .brand {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-  }
-
+  .brand { display: flex; align-items: baseline; gap: 10px; }
   .brand .mark {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--accent);
-    display: inline-block;
-    margin-right: 2px;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent); display: inline-block;
   }
 
   h1 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    margin: 0;
+    font-size: 20px; font-weight: 700; letter-spacing: 0.02em; margin: 0;
   }
 
-  .subtitle {
-    color: var(--muted);
-    font-size: 13px;
-    font-family: 'IBM Plex Mono', monospace;
-  }
+  .header-right { display: flex; align-items: center; gap: 18px; }
 
   .status {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 13px;
-    color: var(--muted);
+    display: flex; align-items: center; gap: 8px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--muted);
   }
 
-  .pulse {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--muted);
-  }
-
+  .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
   .pulse.open {
     background: var(--up);
-    box-shadow: 0 0 0 0 rgba(47,191,113, 0.6);
     animation: pulse 1.8s infinite;
   }
-
   @keyframes pulse {
     0%   { box-shadow: 0 0 0 0 rgba(47,191,113, 0.5); }
     70%  { box-shadow: 0 0 0 8px rgba(47,191,113, 0); }
     100% { box-shadow: 0 0 0 0 rgba(47,191,113, 0); }
   }
 
-  main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 28px;
+  .toggle-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 7px 12px;
+    cursor: pointer;
+    display: flex; align-items: center; gap: 6px;
   }
+  .toggle-btn.active {
+    color: var(--gold);
+    border-color: var(--gold);
+  }
+  .toggle-btn:hover { background: var(--surface-2); }
+
+  main { max-width: 1000px; margin: 0 auto; padding: 28px; }
 
   .table-wrap {
     border: 1px solid var(--border);
@@ -107,10 +96,7 @@
     background: var(--surface);
   }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+  table { width: 100%; border-collapse: collapse; }
 
   thead th {
     text-align: right;
@@ -125,9 +111,8 @@
     border-bottom: 1px solid var(--border);
   }
 
-  thead th:first-child, tbody td:first-child {
-    text-align: left;
-  }
+  thead th:first-child, tbody td:first-child { text-align: left; }
+  thead th:nth-child(2), tbody td:nth-child(2) { text-align: center; width: 36px; }
 
   tbody td {
     padding: 11px 16px;
@@ -140,14 +125,23 @@
   }
 
   tbody tr:last-child td { border-bottom: none; }
-
-  tbody tr:hover { background: var(--surface-2); }
+  tbody tr:hover { background: var(--surface-2); cursor: pointer; }
 
   .symbol {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
     letter-spacing: 0.01em;
+    text-align: left !important;
   }
+
+  .star {
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--border);
+    user-select: none;
+  }
+  .star.active { color: var(--gold); }
+  .star:hover { color: var(--gold); }
 
   .up { color: var(--up); }
   .down { color: var(--down); }
@@ -157,20 +151,57 @@
   .flash-down { background-color: rgba(229,72,77,0.15) !important; }
 
   .empty-state {
-    padding: 48px 16px;
-    text-align: center;
-    color: var(--muted);
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 13px;
+    padding: 48px 16px; text-align: center; color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace; font-size: 13px;
   }
 
   footer {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 28px 28px;
+    max-width: 1000px; margin: 0 auto; padding: 0 28px 28px;
+    color: var(--muted); font-size: 12px; font-family: 'IBM Plex Mono', monospace;
+  }
+
+  /* Chart modal */
+  .modal-backdrop {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.6);
+    align-items: center; justify-content: center;
+    z-index: 100;
+    padding: 20px;
+  }
+  .modal-backdrop.visible { display: flex; }
+
+  .modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 640px;
+    padding: 24px;
+  }
+
+  .modal-header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .modal-header h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px; margin: 0;
+  }
+
+  .modal-close {
+    cursor: pointer; color: var(--muted); font-size: 20px;
+    background: none; border: none; line-height: 1;
+  }
+  .modal-close:hover { color: var(--text); }
+
+  .chart-empty {
     color: var(--muted);
-    font-size: 12px;
     font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    padding: 40px 0;
   }
 </style>
 </head>
@@ -180,9 +211,12 @@
   <div class="brand">
     <h1><span class="mark"></span>NEPSE Live</h1>
   </div>
-  <div class="status">
-    <span class="pulse" id="pulse"></span>
-    <span id="status-text">connecting&hellip;</span>
+  <div class="header-right">
+    <button class="toggle-btn" id="watchlist-toggle">&#9733; Watchlist only</button>
+    <div class="status">
+      <span class="pulse" id="pulse"></span>
+      <span id="status-text">connecting&hellip;</span>
+    </div>
   </div>
 </header>
 
@@ -192,6 +226,7 @@
       <thead>
         <tr>
           <th>Symbol</th>
+          <th></th>
           <th>LTP</th>
           <th>Change</th>
           <th>% Chg</th>
@@ -199,31 +234,81 @@
         </tr>
       </thead>
       <tbody id="rows">
-        <tr><td colspan="5" class="empty-state">Loading&hellip;</td></tr>
+        <tr><td colspan="6" class="empty-state">Loading&hellip;</td></tr>
       </tbody>
     </table>
   </div>
 </main>
 
 <footer>
-  Data refreshes every 30s from Supabase &middot; sourced from NEPSE &middot; educational/personal use only, not investment advice
+  Data refreshes every 30s from Supabase &middot; sourced from NEPSE &middot; educational/personal use only, not investment advice &middot; click a row for its price history
 </footer>
+
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modal-title">Symbol</h2>
+      <button class="modal-close" id="modal-close">&times;</button>
+    </div>
+    <div id="chart-container">
+      <canvas id="price-chart" height="220"></canvas>
+    </div>
+  </div>
+</div>
 
 <script>
   // --- Fill these in with your Supabase project's values ---
   const SUPABASE_URL = "https://xtjzbrhxpcdmwnxjpyzq.supabase.co";
   const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh0anpicmh4cGNkbXdueGpweXpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM0NzkwMzQsImV4cCI6MjA5OTA1NTAzNH0.SHJuY9vyF6pBJQ0zaIp84v74D21Cr8JPkyEONOOy4Dc";
-  // The anon key is safe to expose in frontend code — it can only read,
-  // because we only granted SELECT policies in schema.sql.
+
 
   const REFRESH_MS = 30000;
   const previousPrices = {};
+  let watchlistOnly = false;
+  let chartInstance = null;
+  let latestRows = [];
+  let chartRequestId = 0;
 
-  async function fetchStatus() {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/nepse_market_status?select=is_open,updated_at`, {
+  // --- Watchlist, stored in this browser only (localStorage) ---
+  function getWatchlist() {
+    try {
+      const value = JSON.parse(localStorage.getItem("nepse_watchlist") || "[]");
+      return Array.isArray(value) ? value : [];
+    } catch {
+      return [];
+    }
+  }
+  function saveWatchlist(list) {
+    localStorage.setItem("nepse_watchlist", JSON.stringify(list));
+  }
+  function toggleWatch(symbol) {
+    const list = getWatchlist();
+    const idx = list.indexOf(symbol);
+    if (idx >= 0) list.splice(idx, 1); else list.push(symbol);
+    saveWatchlist(list);
+  }
+
+  async function fetchJson(url) {
+    const res = await fetch(url, {
       headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
     });
-    const data = await res.json();
+    if (!res.ok) {
+      let detail = "";
+      try {
+        const body = await res.json();
+        detail = body.message || body.hint || body.error || "";
+      } catch {
+        // The status code is enough when the response body is not JSON.
+      }
+      throw new Error(`Supabase request failed (${res.status})${detail ? `: ${detail}` : ""}`);
+    }
+    return res.json();
+  }
+
+  async function fetchStatus() {
+    const data = await fetchJson(
+      `${SUPABASE_URL}/rest/v1/nepse_market_status?select=is_open,updated_at&id=eq.1`
+    );
     const pulse = document.getElementById("pulse");
     const statusText = document.getElementById("status-text");
     if (data && data[0]) {
@@ -234,33 +319,51 @@
   }
 
   async function fetchPrices() {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/nepse_live_prices?select=*&order=symbol.asc`, {
-      headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
-    });
-    const rows = await res.json();
-    renderRows(rows);
+    const rows = await fetchJson(
+      `${SUPABASE_URL}/rest/v1/nepse_live_prices?select=*&order=symbol.asc`
+    );
+    if (!Array.isArray(rows)) throw new Error("Unexpected price response from Supabase");
+    latestRows = rows;
+    renderRows(latestRows);
   }
 
   function renderRows(rows) {
     const tbody = document.getElementById("rows");
-    if (!rows || rows.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="5" class="empty-state">No data yet &mdash; run the scraper to populate this table.</td></tr>`;
+    const watchlist = getWatchlist();
+
+    let visible = rows || [];
+    if (watchlistOnly) visible = visible.filter(r => watchlist.includes(r.symbol));
+
+    if (!visible.length) {
+      const msg = watchlistOnly
+        ? "No watchlist symbols yet — click a star to add one."
+        : "No data yet — run the scraper to populate this table.";
+      tbody.innerHTML = `<tr><td colspan="6" class="empty-state">${msg}</td></tr>`;
       return;
     }
 
     tbody.innerHTML = "";
-    rows.forEach(r => {
+    visible.forEach(r => {
       const tr = document.createElement("tr");
       const changeClass = r.point_change > 0 ? "up" : r.point_change < 0 ? "down" : "flat";
       const arrow = r.point_change > 0 ? "\u25B2" : r.point_change < 0 ? "\u25BC" : "";
+      const starred = watchlist.includes(r.symbol);
 
-      tr.innerHTML = `
-        <td class="symbol">${r.symbol}</td>
-        <td class="ltp-cell">${formatNum(r.ltp)}</td>
-        <td class="${changeClass}">${arrow} ${formatNum(r.point_change)}</td>
-        <td class="${changeClass}">${formatNum(r.percent_change)}%</td>
-        <td>${formatNum(r.total_qty)}</td>
-      `;
+      const star = document.createElement("span");
+      star.className = `star${starred ? " active" : ""}`;
+      star.dataset.symbol = String(r.symbol ?? "");
+      star.textContent = "★";
+      const starCell = document.createElement("td");
+      starCell.appendChild(star);
+
+      tr.append(
+        makeCell(String(r.symbol ?? ""), "symbol"),
+        starCell,
+        makeCell(formatNum(r.ltp), "ltp-cell"),
+        makeCell(`${arrow}${arrow ? " " : ""}${formatNum(r.point_change)}`, changeClass),
+        makeCell(r.percent_change == null ? "—" : `${formatNum(r.percent_change)}%`, changeClass),
+        makeCell(formatNum(r.total_qty))
+      );
 
       const prev = previousPrices[r.symbol];
       if (prev !== undefined && prev !== r.ltp) {
@@ -270,14 +373,126 @@
       }
       previousPrices[r.symbol] = r.ltp;
 
+      star.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleWatch(r.symbol);
+        renderRows(rows); // re-render with updated star state
+      });
+
+      tr.addEventListener("click", () => openChart(r.symbol));
+
       tbody.appendChild(tr);
     });
   }
 
-  function formatNum(n) {
-    if (n === null || n === undefined) return "&mdash;";
-    return Number(n).toLocaleString("en-US", { maximumFractionDigits: 2 });
+  function makeCell(text, className = "") {
+    const td = document.createElement("td");
+    if (className) td.className = className;
+    td.textContent = text;
+    return td;
   }
+
+  function formatNum(n) {
+    if (n === null || n === undefined || n === "") return "—";
+    const value = Number(n);
+    return Number.isFinite(value)
+      ? value.toLocaleString("en-US", { maximumFractionDigits: 2 })
+      : "—";
+  }
+
+  // --- Historical chart ---
+  async function openChart(symbol) {
+    const requestId = ++chartRequestId;
+    document.getElementById("modal-title").textContent = symbol;
+    document.getElementById("modal-backdrop").classList.add("visible");
+
+    const container = document.getElementById("chart-container");
+    container.className = "chart-empty";
+    container.textContent = "Loading history…";
+
+    let history;
+    try {
+      const encodedSymbol = encodeURIComponent(symbol);
+      history = await fetchJson(
+        `${SUPABASE_URL}/rest/v1/nepse_price_history?symbol=eq.${encodedSymbol}&select=ltp,recorded_at&order=recorded_at.desc&limit=500`
+      );
+    } catch (error) {
+      if (requestId !== chartRequestId) return;
+      container.textContent = "Could not load price history. Please try again.";
+      console.error(error);
+      return;
+    }
+    if (requestId !== chartRequestId) return;
+    if (!Array.isArray(history)) {
+      container.textContent = "Received an unexpected history response.";
+      return;
+    }
+    history.reverse();
+
+    if (!history.length) {
+      if (chartInstance) {
+        chartInstance.destroy();
+        chartInstance = null;
+      }
+      container.textContent = `No history yet for ${symbol} — check back after the scraper has run a few times.`;
+      return;
+    }
+    container.className = "";
+    container.textContent = "";
+    const canvas = document.createElement("canvas");
+    canvas.id = "price-chart";
+    canvas.height = 220;
+    container.appendChild(canvas);
+
+    const labels = history.map(h => new Date(h.recorded_at).toLocaleString("en-US", {
+      month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"
+    }));
+    const values = history.map(h => h.ltp);
+
+    if (chartInstance) chartInstance.destroy();
+    const ctx = canvas.getContext("2d");
+    chartInstance = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels,
+        datasets: [{
+          label: `${symbol} LTP`,
+          data: values,
+          borderColor: "#E8B84B",
+          backgroundColor: "rgba(232,184,75,0.08)",
+          borderWidth: 1.5,
+          pointRadius: 0,
+          tension: 0.15,
+          fill: true,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { color: "#8B92A0", maxTicksLimit: 6 }, grid: { color: "#2A2F3A" } },
+          y: { ticks: { color: "#8B92A0" }, grid: { color: "#2A2F3A" } }
+        }
+      }
+    });
+  }
+
+  document.getElementById("modal-close").addEventListener("click", () => {
+    chartRequestId++;
+    document.getElementById("modal-backdrop").classList.remove("visible");
+  });
+  document.getElementById("modal-backdrop").addEventListener("click", (e) => {
+    if (e.target.id === "modal-backdrop") {
+      chartRequestId++;
+      e.target.classList.remove("visible");
+    }
+  });
+
+  document.getElementById("watchlist-toggle").addEventListener("click", () => {
+    watchlistOnly = !watchlistOnly;
+    document.getElementById("watchlist-toggle").classList.toggle("active", watchlistOnly);
+    renderRows(latestRows);
+  });
 
   async function tick() {
     try {
