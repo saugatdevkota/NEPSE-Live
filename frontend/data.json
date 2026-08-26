@@ -1,198 +1,198 @@
 {
   "is_open": true,
-  "updated_at": "2026-08-26T06:40:53.272816+00:00",
+  "updated_at": "2026-08-26T07:32:04.743133+00:00",
   "prices": [
     {
       "symbol": "ACLBSL",
-      "ltp": 866.1,
-      "point_change": -25.9,
-      "percent_change": -2.9,
-      "total_qty": 134,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 890.0,
+      "point_change": -2.0,
+      "percent_change": -0.22,
+      "total_qty": 154,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ADBL",
-      "ltp": 296.0,
-      "point_change": -2.8,
-      "percent_change": -0.94,
-      "total_qty": 5556,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 298.0,
+      "point_change": -0.8,
+      "percent_change": -0.27,
+      "total_qty": 11166,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "AHL",
-      "ltp": 388.4,
-      "point_change": -9.6,
-      "percent_change": -2.41,
-      "total_qty": 140,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 388.6,
+      "point_change": -9.4,
+      "percent_change": -2.36,
+      "total_qty": 451,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "AHPC",
-      "ltp": 254.0,
-      "point_change": -3.5,
-      "percent_change": -1.36,
-      "total_qty": 42046,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 256.2,
+      "point_change": -1.3,
+      "percent_change": -0.5,
+      "total_qty": 56539,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "AKJCL",
-      "ltp": 343.0,
-      "point_change": -4.1,
-      "percent_change": -1.18,
-      "total_qty": 71208,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 345.5,
+      "point_change": -1.6,
+      "percent_change": -0.46,
+      "total_qty": 100410,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "AKPL",
-      "ltp": 241.0,
-      "point_change": -6.0,
-      "percent_change": -2.43,
-      "total_qty": 36902,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 241.5,
+      "point_change": -5.5,
+      "percent_change": -2.23,
+      "total_qty": 64718,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ALBSL",
-      "ltp": 1096.0,
-      "point_change": -4.0,
-      "percent_change": -0.36,
-      "total_qty": 1245,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1077.0,
+      "point_change": -23.0,
+      "percent_change": -2.09,
+      "total_qty": 14288,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ALICL",
-      "ltp": 400.2,
-      "point_change": -10.4,
-      "percent_change": -2.53,
-      "total_qty": 18709,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 404.0,
+      "point_change": -6.6,
+      "percent_change": -1.61,
+      "total_qty": 23922,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ANLB",
       "ltp": 5002.0,
       "point_change": -83.0,
       "percent_change": -1.63,
-      "total_qty": 182,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 392,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "APHL",
-      "ltp": 685.2,
-      "point_change": -8.8,
-      "percent_change": -1.27,
-      "total_qty": 2438,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 685.1,
+      "point_change": -8.9,
+      "percent_change": -1.28,
+      "total_qty": 3798,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "API",
-      "ltp": 327.1,
-      "point_change": -2.7,
-      "percent_change": -0.82,
-      "total_qty": 37667,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 327.0,
+      "point_change": -2.8,
+      "percent_change": -0.85,
+      "total_qty": 55778,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "AVYAN",
-      "ltp": 1004.0,
-      "point_change": -16.0,
-      "percent_change": -1.57,
-      "total_qty": 20,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1010.0,
+      "point_change": -10.0,
+      "percent_change": -0.98,
+      "total_qty": 110,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BANDIPUR",
-      "ltp": 646.0,
-      "point_change": -10.0,
-      "percent_change": -1.52,
-      "total_qty": 14612,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 650.0,
+      "point_change": -6.0,
+      "percent_change": -0.91,
+      "total_qty": 18061,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BARUN",
-      "ltp": 315.0,
-      "point_change": -3.0,
-      "percent_change": -0.94,
-      "total_qty": 14254,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 313.3,
+      "point_change": -4.7,
+      "percent_change": -1.48,
+      "total_qty": 15401,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BBC",
-      "ltp": 4030.0,
-      "point_change": -22.0,
-      "percent_change": -0.54,
-      "total_qty": 20,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 4118.0,
+      "point_change": 66.0,
+      "percent_change": 1.63,
+      "total_qty": 30,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BEDC",
-      "ltp": 289.0,
-      "point_change": -9.0,
-      "percent_change": -3.02,
-      "total_qty": 17893,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 288.0,
+      "point_change": -10.0,
+      "percent_change": -3.36,
+      "total_qty": 25832,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BFC",
-      "ltp": 445.5,
-      "point_change": -9.5,
-      "percent_change": -2.09,
-      "total_qty": 10952,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 452.0,
+      "point_change": -3.0,
+      "percent_change": -0.66,
+      "total_qty": 12690,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BGWT",
-      "ltp": 493.0,
-      "point_change": -7.0,
-      "percent_change": -1.4,
-      "total_qty": 710,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 490.0,
+      "point_change": -10.0,
+      "percent_change": -2.0,
+      "total_qty": 3732,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BHCL",
-      "ltp": 542.6,
-      "point_change": -10.4,
-      "percent_change": -1.88,
-      "total_qty": 30675,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 548.4,
+      "point_change": -4.6,
+      "percent_change": -0.83,
+      "total_qty": 39516,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BHDC",
-      "ltp": 422.0,
-      "point_change": -6.0,
-      "percent_change": -1.4,
-      "total_qty": 6976,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 421.5,
+      "point_change": -6.5,
+      "percent_change": -1.52,
+      "total_qty": 8213,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BHL",
-      "ltp": 200.5,
-      "point_change": -3.5,
-      "percent_change": -1.72,
-      "total_qty": 45303,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 201.1,
+      "point_change": -2.9,
+      "percent_change": -1.42,
+      "total_qty": 75449,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BHPL",
-      "ltp": 448.5,
-      "point_change": -27.5,
-      "percent_change": -5.78,
-      "total_qty": 790,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 450.0,
+      "point_change": -26.0,
+      "percent_change": -5.46,
+      "total_qty": 1570,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BJHL",
-      "ltp": 689.0,
-      "point_change": -21.0,
-      "percent_change": -2.96,
-      "total_qty": 1770,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 680.0,
+      "point_change": -30.0,
+      "percent_change": -4.23,
+      "total_qty": 3390,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BNHC",
-      "ltp": 261.0,
-      "point_change": -11.0,
-      "percent_change": -4.04,
-      "total_qty": 10592,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 265.5,
+      "point_change": -6.5,
+      "percent_change": -2.39,
+      "total_qty": 15300,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BNL",
@@ -200,47 +200,47 @@
       "point_change": -300.0,
       "percent_change": -2.01,
       "total_qty": 10,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BNT",
-      "ltp": 11510.0,
-      "point_change": -115.0,
-      "percent_change": -0.99,
-      "total_qty": 30,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 11505.0,
+      "point_change": -120.0,
+      "percent_change": -1.03,
+      "total_qty": 40,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BPCL",
-      "ltp": 641.0,
-      "point_change": -12.0,
-      "percent_change": -1.84,
-      "total_qty": 6169,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 646.0,
+      "point_change": -7.0,
+      "percent_change": -1.07,
+      "total_qty": 6940,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "BUNGAL",
-      "ltp": 555.0,
-      "point_change": -9.8,
-      "percent_change": -1.74,
-      "total_qty": 9932,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 550.8,
+      "point_change": -14.0,
+      "percent_change": -2.48,
+      "total_qty": 12271,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "C30MF",
-      "ltp": 9.75,
-      "point_change": -0.25,
-      "percent_change": -2.5,
-      "total_qty": 100,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.8,
+      "point_change": -0.2,
+      "percent_change": -2.0,
+      "total_qty": 83200,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CBBL",
-      "ltp": 935.0,
-      "point_change": -1.0,
-      "percent_change": -0.11,
-      "total_qty": 2690,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 934.5,
+      "point_change": -1.5,
+      "percent_change": -0.16,
+      "total_qty": 3065,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CCBD88",
@@ -248,119 +248,127 @@
       "point_change": -35.5,
       "percent_change": -2.96,
       "total_qty": 25,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CFCL",
-      "ltp": 580.8,
-      "point_change": -1.4,
-      "percent_change": -0.24,
-      "total_qty": 31940,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 581.4,
+      "point_change": -0.8,
+      "percent_change": -0.14,
+      "total_qty": 34690,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CGH",
       "ltp": 770.0,
       "point_change": -5.0,
       "percent_change": -0.65,
-      "total_qty": 3824,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 6894,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CHCL",
-      "ltp": 431.0,
-      "point_change": -44.1,
-      "percent_change": -9.28,
-      "total_qty": 182850,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 427.0,
+      "point_change": -48.1,
+      "percent_change": -10.12,
+      "total_qty": 259418,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CHDC",
-      "ltp": 2166.0,
-      "point_change": -30.9,
-      "percent_change": -1.41,
-      "total_qty": 3682,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 2165.1,
+      "point_change": -31.8,
+      "percent_change": -1.45,
+      "total_qty": 8100,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CHL",
-      "ltp": 255.0,
-      "point_change": -10.0,
-      "percent_change": -3.77,
-      "total_qty": 9497,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 260.0,
+      "point_change": -5.0,
+      "percent_change": -1.89,
+      "total_qty": 14507,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CIT",
-      "ltp": 1680.0,
-      "point_change": 0.0,
-      "percent_change": 0.0,
-      "total_qty": 1498,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1665.0,
+      "point_change": -15.0,
+      "percent_change": -0.89,
+      "total_qty": 3185,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CITY",
-      "ltp": 345.0,
-      "point_change": -4.9,
-      "percent_change": -1.4,
-      "total_qty": 28637,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 344.4,
+      "point_change": -5.5,
+      "percent_change": -1.57,
+      "total_qty": 35984,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "CIZBD90",
+      "ltp": 1250.0,
+      "point_change": -11.0,
+      "percent_change": -0.87,
+      "total_qty": 200,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CKHL",
-      "ltp": 577.2,
-      "point_change": -17.3,
-      "percent_change": -2.91,
-      "total_qty": 120,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 578.0,
+      "point_change": -16.5,
+      "percent_change": -2.78,
+      "total_qty": 240,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CLI",
-      "ltp": 423.0,
-      "point_change": -3.0,
-      "percent_change": -0.7,
-      "total_qty": 2984,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 421.7,
+      "point_change": -4.3,
+      "percent_change": -1.01,
+      "total_qty": 3528,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CORBL",
-      "ltp": 887.0,
-      "point_change": -20.9,
-      "percent_change": -2.3,
-      "total_qty": 11940,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 893.0,
+      "point_change": -14.9,
+      "percent_change": -1.64,
+      "total_qty": 14649,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CREST",
-      "ltp": 1090.0,
-      "point_change": -163.0,
-      "percent_change": -13.01,
-      "total_qty": 1020,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1095.0,
+      "point_change": -158.0,
+      "percent_change": -12.61,
+      "total_qty": 1535,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CSY",
-      "ltp": 8.38,
-      "point_change": -0.19,
-      "percent_change": -2.22,
-      "total_qty": 300,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 8.5,
+      "point_change": -0.07,
+      "percent_change": -0.82,
+      "total_qty": 500,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CYCL",
-      "ltp": 1512.5,
-      "point_change": -83.5,
-      "percent_change": -5.23,
-      "total_qty": 12594,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1527.0,
+      "point_change": -69.0,
+      "percent_change": -4.32,
+      "total_qty": 15233,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CZBIL",
-      "ltp": 193.8,
-      "point_change": -3.1,
-      "percent_change": -1.57,
-      "total_qty": 8318,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 194.6,
+      "point_change": -2.3,
+      "percent_change": -1.17,
+      "total_qty": 19568,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "CZBILP",
@@ -368,63 +376,71 @@
       "point_change": -3.0,
       "percent_change": -2.91,
       "total_qty": 45371,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "DDBL",
-      "ltp": 827.3,
-      "point_change": -10.7,
-      "percent_change": -1.28,
-      "total_qty": 762,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 834.0,
+      "point_change": -4.0,
+      "percent_change": -0.48,
+      "total_qty": 1419,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "DHEL",
-      "ltp": 551.2,
-      "point_change": -22.8,
-      "percent_change": -3.97,
-      "total_qty": 6031,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 556.3,
+      "point_change": -17.7,
+      "percent_change": -3.08,
+      "total_qty": 7199,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "DHPL",
-      "ltp": 270.0,
-      "point_change": -5.0,
-      "percent_change": -1.82,
-      "total_qty": 2483,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 269.0,
+      "point_change": -6.0,
+      "percent_change": -2.18,
+      "total_qty": 4949,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "DLBS",
-      "ltp": 1004.0,
-      "point_change": -30.2,
-      "percent_change": -2.92,
-      "total_qty": 50,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1010.0,
+      "point_change": -24.2,
+      "percent_change": -2.34,
+      "total_qty": 98,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "DOLTI",
-      "ltp": 293.0,
-      "point_change": -6.0,
-      "percent_change": -2.01,
-      "total_qty": 8587,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 292.0,
+      "point_change": -7.0,
+      "percent_change": -2.34,
+      "total_qty": 12584,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "DORDI",
-      "ltp": 240.2,
-      "point_change": -5.4,
-      "percent_change": -2.2,
-      "total_qty": 10965,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 241.3,
+      "point_change": -4.3,
+      "percent_change": -1.75,
+      "total_qty": 22847,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "EBL",
-      "ltp": 725.1,
-      "point_change": -6.8,
-      "percent_change": -0.93,
-      "total_qty": 11641,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 732.9,
+      "point_change": 1.0,
+      "percent_change": 0.14,
+      "total_qty": 16225,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "EBLD85",
+      "ltp": 1096.9,
+      "point_change": 31.9,
+      "percent_change": 3.0,
+      "total_qty": 30,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "EBLD86",
@@ -432,31 +448,31 @@
       "point_change": -14.9,
       "percent_change": -1.39,
       "total_qty": 25,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ECL",
-      "ltp": 1420.0,
-      "point_change": 14.0,
-      "percent_change": 1.0,
-      "total_qty": 6816,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1472.0,
+      "point_change": 66.0,
+      "percent_change": 4.69,
+      "total_qty": 13690,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "EDBL",
-      "ltp": 568.2,
-      "point_change": -13.2,
-      "percent_change": -2.27,
-      "total_qty": 440,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 568.0,
+      "point_change": -13.4,
+      "percent_change": -2.3,
+      "total_qty": 3440,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "EHPL",
-      "ltp": 318.0,
-      "point_change": 1.0,
-      "percent_change": 0.32,
-      "total_qty": 3616,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 328.0,
+      "point_change": 11.0,
+      "percent_change": 3.47,
+      "total_qty": 9128,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ENL",
@@ -464,23 +480,23 @@
       "point_change": 0.0,
       "percent_change": 0.0,
       "total_qty": 10,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "FMDBL",
-      "ltp": 732.1,
-      "point_change": -2.9,
-      "percent_change": -0.39,
-      "total_qty": 720,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 734.0,
+      "point_change": -1.0,
+      "percent_change": -0.14,
+      "total_qty": 2644,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "FOWAD",
-      "ltp": 894.0,
-      "point_change": -2.1,
-      "percent_change": -0.23,
-      "total_qty": 1236,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 899.0,
+      "point_change": 2.9,
+      "percent_change": 0.32,
+      "total_qty": 2281,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GBBD85",
@@ -488,23 +504,23 @@
       "point_change": -15.1,
       "percent_change": -1.42,
       "total_qty": 25,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GBBL",
-      "ltp": 419.2,
-      "point_change": -2.8,
-      "percent_change": -0.66,
-      "total_qty": 5816,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 420.1,
+      "point_change": -1.9,
+      "percent_change": -0.45,
+      "total_qty": 8768,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GBIME",
-      "ltp": 242.5,
-      "point_change": -2.3,
-      "percent_change": -0.94,
-      "total_qty": 30703,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 243.7,
+      "point_change": -1.1,
+      "percent_change": -0.45,
+      "total_qty": 43632,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GBIMESY2",
@@ -512,103 +528,119 @@
       "point_change": 0.0,
       "percent_change": 0.0,
       "total_qty": 100,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GBLBS",
-      "ltp": 665.0,
-      "point_change": -9.0,
-      "percent_change": -1.34,
-      "total_qty": 2697,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 670.0,
+      "point_change": -4.0,
+      "percent_change": -0.59,
+      "total_qty": 2872,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GCIL",
-      "ltp": 338.0,
-      "point_change": 0.0,
-      "percent_change": 0.0,
-      "total_qty": 6411,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 342.1,
+      "point_change": 4.1,
+      "percent_change": 1.21,
+      "total_qty": 12045,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GFCL",
-      "ltp": 563.9,
-      "point_change": -9.1,
-      "percent_change": -1.59,
-      "total_qty": 3632,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 568.0,
+      "point_change": -5.0,
+      "percent_change": -0.87,
+      "total_qty": 4172,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GHL",
-      "ltp": 225.0,
-      "point_change": -3.9,
-      "percent_change": -1.7,
-      "total_qty": 41044,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 228.0,
+      "point_change": -0.9,
+      "percent_change": -0.39,
+      "total_qty": 47189,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "GIBF1",
+      "ltp": 10.79,
+      "point_change": 0.04,
+      "percent_change": 0.37,
+      "total_qty": 9000,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GILB",
-      "ltp": 1080.0,
-      "point_change": -6.6,
-      "percent_change": -0.61,
-      "total_qty": 136,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1087.0,
+      "point_change": 0.4,
+      "percent_change": 0.04,
+      "total_qty": 296,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GLBSL",
-      "ltp": 1700.0,
-      "point_change": -12.0,
-      "percent_change": -0.7,
-      "total_qty": 320,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1670.1,
+      "point_change": -41.9,
+      "percent_change": -2.45,
+      "total_qty": 362,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GLH",
-      "ltp": 244.1,
-      "point_change": -5.9,
-      "percent_change": -2.36,
-      "total_qty": 19926,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 243.0,
+      "point_change": -7.0,
+      "percent_change": -2.8,
+      "total_qty": 55809,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "GMFBS",
+      "ltp": 1114.0,
+      "point_change": -34.0,
+      "percent_change": -2.96,
+      "total_qty": 11,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GMFIL",
-      "ltp": 408.0,
-      "point_change": -16.0,
-      "percent_change": -3.77,
-      "total_qty": 12571,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 417.9,
+      "point_change": -6.1,
+      "percent_change": -1.44,
+      "total_qty": 13867,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GMLI",
-      "ltp": 980.0,
-      "point_change": -5.2,
-      "percent_change": -0.53,
-      "total_qty": 190,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 971.1,
+      "point_change": -14.1,
+      "percent_change": -1.43,
+      "total_qty": 350,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GRDBL",
       "ltp": 969.0,
       "point_change": -30.9,
       "percent_change": -3.09,
-      "total_qty": 941,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 1074,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GSY",
-      "ltp": 9.2,
-      "point_change": 0.02,
-      "percent_change": 0.22,
-      "total_qty": 300,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.17,
+      "point_change": -0.01,
+      "percent_change": -0.11,
+      "total_qty": 800,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GUFL",
-      "ltp": 500.0,
-      "point_change": -9.7,
-      "percent_change": -1.9,
-      "total_qty": 10509,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 503.0,
+      "point_change": -6.7,
+      "percent_change": -1.31,
+      "total_qty": 13702,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GUFLPO",
@@ -616,15 +648,15 @@
       "point_change": 0.0,
       "percent_change": 0.0,
       "total_qty": 7037,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "GVL",
-      "ltp": 470.1,
-      "point_change": -8.8,
-      "percent_change": -1.84,
-      "total_qty": 5138,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 472.0,
+      "point_change": -6.9,
+      "percent_change": -1.44,
+      "total_qty": 7368,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "H8020",
@@ -632,23 +664,23 @@
       "point_change": -0.22,
       "percent_change": -1.8,
       "total_qty": 700,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HATHY",
-      "ltp": 615.0,
-      "point_change": -18.4,
-      "percent_change": -2.9,
-      "total_qty": 2151,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 610.5,
+      "point_change": -22.9,
+      "percent_change": -3.62,
+      "total_qty": 2580,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HBL",
-      "ltp": 186.4,
-      "point_change": -3.6,
-      "percent_change": -1.89,
-      "total_qty": 19472,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 188.0,
+      "point_change": -2.0,
+      "percent_change": -1.05,
+      "total_qty": 20837,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HBLD86",
@@ -656,215 +688,223 @@
       "point_change": 0.0,
       "percent_change": 0.0,
       "total_qty": 1,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HDHPC",
-      "ltp": 203.0,
-      "point_change": -1.1,
-      "percent_change": -0.54,
-      "total_qty": 46665,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 204.0,
+      "point_change": -0.1,
+      "percent_change": -0.05,
+      "total_qty": 73402,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HDL",
-      "ltp": 1157.0,
-      "point_change": -12.0,
-      "percent_change": -1.03,
-      "total_qty": 7528,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1160.0,
+      "point_change": -9.0,
+      "percent_change": -0.77,
+      "total_qty": 12567,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HEI",
-      "ltp": 512.6,
-      "point_change": -11.4,
-      "percent_change": -2.18,
-      "total_qty": 7636,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 508.1,
+      "point_change": -15.9,
+      "percent_change": -3.03,
+      "total_qty": 14656,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HEIP",
-      "ltp": 328.9,
-      "point_change": -10.1,
-      "percent_change": -2.98,
-      "total_qty": 1717,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 319.1,
+      "point_change": -19.9,
+      "percent_change": -5.87,
+      "total_qty": 2217,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HFIN",
-      "ltp": 615.0,
-      "point_change": -18.0,
-      "percent_change": -2.84,
-      "total_qty": 13476,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 620.0,
+      "point_change": -13.0,
+      "percent_change": -2.05,
+      "total_qty": 18579,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HHL",
-      "ltp": 320.5,
-      "point_change": -7.5,
-      "percent_change": -2.29,
-      "total_qty": 8769,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 319.0,
+      "point_change": -9.0,
+      "percent_change": -2.74,
+      "total_qty": 24943,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HIDCL",
-      "ltp": 242.9,
-      "point_change": -4.1,
-      "percent_change": -1.66,
-      "total_qty": 16414,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 243.0,
+      "point_change": -4.0,
+      "percent_change": -1.62,
+      "total_qty": 29189,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HIDCLP",
-      "ltp": 181.0,
-      "point_change": -1.2,
-      "percent_change": -0.66,
-      "total_qty": 23334,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 180.3,
+      "point_change": -1.9,
+      "percent_change": -1.04,
+      "total_qty": 31286,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HIMSTAR",
-      "ltp": 644.0,
-      "point_change": -14.0,
-      "percent_change": -2.13,
-      "total_qty": 1248,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 650.0,
+      "point_change": -8.0,
+      "percent_change": -1.22,
+      "total_qty": 1278,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HLBSL",
       "ltp": 856.5,
       "point_change": -14.5,
       "percent_change": -1.66,
-      "total_qty": 150,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 153,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HLI",
-      "ltp": 306.0,
-      "point_change": -1.0,
-      "percent_change": -0.33,
-      "total_qty": 7147,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 305.8,
+      "point_change": -1.2,
+      "percent_change": -0.39,
+      "total_qty": 9894,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HLICF",
-      "ltp": 8.23,
-      "point_change": -0.07,
-      "percent_change": -0.84,
-      "total_qty": 500,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 8.29,
+      "point_change": -0.01,
+      "percent_change": -0.12,
+      "total_qty": 3500,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HPPL",
-      "ltp": 368.0,
-      "point_change": -10.0,
-      "percent_change": -2.65,
-      "total_qty": 37828,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 370.0,
+      "point_change": -8.0,
+      "percent_change": -2.12,
+      "total_qty": 42624,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HRL",
       "ltp": 551.0,
       "point_change": -8.4,
       "percent_change": -1.5,
-      "total_qty": 22403,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 38535,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "HURJA",
-      "ltp": 229.0,
-      "point_change": -4.5,
-      "percent_change": -1.93,
-      "total_qty": 28904,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 230.0,
+      "point_change": -3.5,
+      "percent_change": -1.5,
+      "total_qty": 36174,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ICFC",
-      "ltp": 585.1,
-      "point_change": -4.9,
-      "percent_change": -0.83,
-      "total_qty": 2289,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 580.1,
+      "point_change": -9.9,
+      "percent_change": -1.68,
+      "total_qty": 6724,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ICFCD89",
-      "ltp": 1074.6,
-      "point_change": -24.4,
-      "percent_change": -2.22,
-      "total_qty": 25,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1100.0,
+      "point_change": 1.0,
+      "percent_change": 0.09,
+      "total_qty": 75,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "IGI",
-      "ltp": 400.0,
-      "point_change": -17.0,
-      "percent_change": -4.08,
-      "total_qty": 12653,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 405.0,
+      "point_change": -12.0,
+      "percent_change": -2.88,
+      "total_qty": 17278,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "IHL",
-      "ltp": 307.0,
-      "point_change": -5.5,
-      "percent_change": -1.76,
-      "total_qty": 5747,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 306.0,
+      "point_change": -6.5,
+      "percent_change": -2.08,
+      "total_qty": 7458,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ILBS",
-      "ltp": 848.0,
-      "point_change": -1.9,
-      "percent_change": -0.22,
-      "total_qty": 518,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 831.5,
+      "point_change": -18.4,
+      "percent_change": -2.16,
+      "total_qty": 703,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ILI",
-      "ltp": 400.1,
-      "point_change": -10.9,
-      "percent_change": -2.65,
-      "total_qty": 7377,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 403.7,
+      "point_change": -7.3,
+      "percent_change": -1.78,
+      "total_qty": 9051,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "JBBD87",
+      "ltp": 1100.1,
+      "point_change": 0.0,
+      "percent_change": 0.0,
+      "total_qty": 25,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "JBBL",
-      "ltp": 327.5,
-      "point_change": -5.5,
-      "percent_change": -1.65,
-      "total_qty": 169717,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 328.0,
+      "point_change": -5.0,
+      "percent_change": -1.5,
+      "total_qty": 181434,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "JBLB",
       "ltp": 1248.0,
       "point_change": 1.8,
       "percent_change": 0.14,
-      "total_qty": 593,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 994,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "JFL",
-      "ltp": 378.0,
-      "point_change": -1.0,
-      "percent_change": -0.26,
-      "total_qty": 227,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 373.0,
+      "point_change": -6.0,
+      "percent_change": -1.58,
+      "total_qty": 1432,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "JHAPA",
-      "ltp": 1005.7,
-      "point_change": -22.8,
-      "percent_change": -2.22,
-      "total_qty": 493,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1001.0,
+      "point_change": -27.5,
+      "percent_change": -2.67,
+      "total_qty": 1271,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "JOSHI",
-      "ltp": 256.1,
-      "point_change": -1.9,
-      "percent_change": -0.74,
-      "total_qty": 2864,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 256.5,
+      "point_change": -1.5,
+      "percent_change": -0.58,
+      "total_qty": 5415,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "JSLBB",
@@ -872,31 +912,31 @@
       "point_change": -20.0,
       "percent_change": -2.13,
       "total_qty": 50,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KAHL",
-      "ltp": 491.0,
-      "point_change": -12.0,
-      "percent_change": -2.39,
-      "total_qty": 14133,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 493.2,
+      "point_change": -9.8,
+      "percent_change": -1.95,
+      "total_qty": 20528,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KBL",
-      "ltp": 213.0,
-      "point_change": -1.0,
-      "percent_change": -0.47,
-      "total_qty": 55512,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 212.9,
+      "point_change": -1.1,
+      "percent_change": -0.51,
+      "total_qty": 108488,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KBSH",
-      "ltp": 890.0,
-      "point_change": -20.0,
-      "percent_change": -2.2,
-      "total_qty": 1085,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 899.0,
+      "point_change": -11.0,
+      "percent_change": -1.21,
+      "total_qty": 2085,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KDBY",
@@ -904,63 +944,63 @@
       "point_change": -0.08,
       "percent_change": -0.8,
       "total_qty": 24425,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KDL",
-      "ltp": 731.0,
-      "point_change": -12.6,
-      "percent_change": -1.69,
-      "total_qty": 360,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 734.5,
+      "point_change": -9.1,
+      "percent_change": -1.22,
+      "total_qty": 380,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KHPL",
-      "ltp": 744.0,
-      "point_change": -34.0,
-      "percent_change": -4.37,
-      "total_qty": 4990,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 751.0,
+      "point_change": -27.0,
+      "percent_change": -3.47,
+      "total_qty": 5375,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KKHC",
-      "ltp": 266.1,
-      "point_change": -7.9,
-      "percent_change": -2.88,
-      "total_qty": 42986,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 272.9,
+      "point_change": -1.1,
+      "percent_change": -0.4,
+      "total_qty": 63126,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KMCDB",
       "ltp": 767.0,
       "point_change": -16.0,
       "percent_change": -2.04,
-      "total_qty": 132,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 442,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KPCL",
       "ltp": 456.0,
       "point_change": -9.0,
       "percent_change": -1.94,
-      "total_qty": 3115,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 8620,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "KSBBL",
-      "ltp": 470.9,
-      "point_change": 0.9,
-      "percent_change": 0.19,
-      "total_qty": 11269,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 470.0,
+      "point_change": 0.0,
+      "percent_change": 0.0,
+      "total_qty": 20533,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "LBBL",
-      "ltp": 471.9,
-      "point_change": -7.1,
-      "percent_change": -1.48,
-      "total_qty": 37616,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 474.0,
+      "point_change": -5.0,
+      "percent_change": -1.04,
+      "total_qty": 47610,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "LBLD88",
@@ -968,47 +1008,55 @@
       "point_change": -0.7,
       "percent_change": -0.06,
       "total_qty": 10,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "LEC",
-      "ltp": 210.3,
-      "point_change": -2.6,
-      "percent_change": -1.22,
-      "total_qty": 43726,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 212.0,
+      "point_change": -0.9,
+      "percent_change": -0.42,
+      "total_qty": 58332,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "LICN",
-      "ltp": 767.0,
-      "point_change": 2.0,
-      "percent_change": 0.26,
-      "total_qty": 1693,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 767.1,
+      "point_change": 2.1,
+      "percent_change": 0.27,
+      "total_qty": 2063,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "LLBS",
-      "ltp": 877.0,
-      "point_change": -9.0,
-      "percent_change": -1.02,
-      "total_qty": 70,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 890.0,
+      "point_change": 4.0,
+      "percent_change": 0.45,
+      "total_qty": 80,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "LSH12",
-      "ltp": 8.76,
-      "point_change": -0.19,
-      "percent_change": -2.12,
-      "total_qty": 500,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.01,
+      "point_change": 0.06,
+      "percent_change": 0.67,
+      "total_qty": 1000,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "LSL",
-      "ltp": 215.6,
-      "point_change": -1.4,
-      "percent_change": -0.65,
-      "total_qty": 4581,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 217.0,
+      "point_change": 0.0,
+      "percent_change": 0.0,
+      "total_qty": 18193,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "LUK",
+      "ltp": 9.83,
+      "point_change": 0.28,
+      "percent_change": 2.93,
+      "total_qty": 100,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "LVF2",
@@ -1016,55 +1064,55 @@
       "point_change": 0.0,
       "percent_change": 0.0,
       "total_qty": 100,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MABEL",
-      "ltp": 573.0,
-      "point_change": -11.0,
-      "percent_change": -1.88,
-      "total_qty": 2031,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 575.1,
+      "point_change": -8.9,
+      "percent_change": -1.52,
+      "total_qty": 2161,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MAKAR",
-      "ltp": 427.0,
-      "point_change": -12.0,
-      "percent_change": -2.73,
-      "total_qty": 12240,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 429.9,
+      "point_change": -9.1,
+      "percent_change": -2.07,
+      "total_qty": 18849,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MANDU",
-      "ltp": 680.1,
-      "point_change": -31.1,
-      "percent_change": -4.37,
-      "total_qty": 1404,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 700.0,
+      "point_change": -11.2,
+      "percent_change": -1.57,
+      "total_qty": 1954,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MATRI",
       "ltp": 770.0,
       "point_change": 0.0,
       "percent_change": 0.0,
-      "total_qty": 13,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 93,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MBJC",
-      "ltp": 255.4,
-      "point_change": -13.2,
-      "percent_change": -4.91,
-      "total_qty": 74140,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 255.8,
+      "point_change": -12.8,
+      "percent_change": -4.77,
+      "total_qty": 86399,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MBL",
-      "ltp": 246.3,
-      "point_change": -3.6,
-      "percent_change": -1.44,
-      "total_qty": 6870,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 247.1,
+      "point_change": -2.8,
+      "percent_change": -1.12,
+      "total_qty": 9463,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MBLEF",
@@ -1072,87 +1120,87 @@
       "point_change": 0.14,
       "percent_change": 1.46,
       "total_qty": 600,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MCHL",
-      "ltp": 260.0,
-      "point_change": -14.9,
-      "percent_change": -5.42,
-      "total_qty": 3736,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 257.5,
+      "point_change": -17.4,
+      "percent_change": -6.33,
+      "total_qty": 7099,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MDB",
-      "ltp": 557.0,
-      "point_change": -4.0,
-      "percent_change": -0.71,
-      "total_qty": 1181,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 565.0,
+      "point_change": 4.0,
+      "percent_change": 0.71,
+      "total_qty": 2051,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MEHL",
-      "ltp": 230.0,
-      "point_change": -6.9,
-      "percent_change": -2.91,
-      "total_qty": 39842,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 230.8,
+      "point_change": -6.1,
+      "percent_change": -2.57,
+      "total_qty": 66482,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MEL",
-      "ltp": 198.5,
-      "point_change": -4.5,
-      "percent_change": -2.22,
-      "total_qty": 13572,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 200.0,
+      "point_change": -3.0,
+      "percent_change": -1.48,
+      "total_qty": 20133,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MEN",
-      "ltp": 611.2,
-      "point_change": -8.8,
-      "percent_change": -1.42,
-      "total_qty": 30391,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 615.2,
+      "point_change": -4.8,
+      "percent_change": -0.77,
+      "total_qty": 50899,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MEPDL",
-      "ltp": 672.4,
-      "point_change": -26.6,
-      "percent_change": -3.81,
-      "total_qty": 18351,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 671.0,
+      "point_change": -28.0,
+      "percent_change": -4.01,
+      "total_qty": 23741,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MERO",
-      "ltp": 615.0,
-      "point_change": -10.0,
-      "percent_change": -1.6,
-      "total_qty": 2729,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 612.6,
+      "point_change": -12.4,
+      "percent_change": -1.98,
+      "total_qty": 2893,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MFIL",
-      "ltp": 723.0,
-      "point_change": -15.0,
-      "percent_change": -2.03,
-      "total_qty": 1911,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 725.5,
+      "point_change": -12.5,
+      "percent_change": -1.69,
+      "total_qty": 4626,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MHCL",
-      "ltp": 287.0,
-      "point_change": -2.6,
-      "percent_change": -0.9,
-      "total_qty": 1917,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 278.0,
+      "point_change": -11.6,
+      "percent_change": -4.01,
+      "total_qty": 11998,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MHL",
-      "ltp": 449.0,
-      "point_change": -14.0,
-      "percent_change": -3.02,
-      "total_qty": 1870,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 452.2,
+      "point_change": -10.8,
+      "percent_change": -2.33,
+      "total_qty": 2585,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MHNL",
@@ -1160,151 +1208,151 @@
       "point_change": -7.0,
       "percent_change": -2.93,
       "total_qty": 13582,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MKCL",
-      "ltp": 870.0,
-      "point_change": -20.0,
-      "percent_change": -2.25,
-      "total_qty": 1365,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 880.0,
+      "point_change": -10.0,
+      "percent_change": -1.12,
+      "total_qty": 3155,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MKHC",
-      "ltp": 244.0,
-      "point_change": -8.4,
-      "percent_change": -3.33,
-      "total_qty": 7499,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 247.1,
+      "point_change": -5.3,
+      "percent_change": -2.1,
+      "total_qty": 10905,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MKHL",
-      "ltp": 481.0,
-      "point_change": -12.1,
-      "percent_change": -2.45,
-      "total_qty": 1480,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 485.2,
+      "point_change": -7.9,
+      "percent_change": -1.6,
+      "total_qty": 1571,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MKJC",
-      "ltp": 375.5,
-      "point_change": -38.9,
-      "percent_change": -9.39,
-      "total_qty": 22133,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 372.0,
+      "point_change": -42.4,
+      "percent_change": -10.23,
+      "total_qty": 41920,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MLBBL",
-      "ltp": 960.0,
-      "point_change": 6.5,
-      "percent_change": 0.68,
-      "total_qty": 40,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 938.0,
+      "point_change": -15.5,
+      "percent_change": -1.63,
+      "total_qty": 150,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MLBL",
-      "ltp": 342.5,
-      "point_change": -6.4,
-      "percent_change": -1.83,
-      "total_qty": 9082,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 342.8,
+      "point_change": -6.1,
+      "percent_change": -1.75,
+      "total_qty": 12062,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MLBSL",
-      "ltp": 1140.0,
-      "point_change": -23.0,
-      "percent_change": -1.98,
-      "total_qty": 300,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1117.0,
+      "point_change": -46.0,
+      "percent_change": -3.96,
+      "total_qty": 570,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MMF1",
       "ltp": 9.0,
       "point_change": 0.3,
       "percent_change": 3.45,
-      "total_qty": 2500,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 4395,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MMKJL",
-      "ltp": 388.0,
-      "point_change": -36.0,
-      "percent_change": -8.49,
-      "total_qty": 5099,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 403.5,
+      "point_change": -20.5,
+      "percent_change": -4.83,
+      "total_qty": 8019,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MNBBL",
-      "ltp": 356.0,
-      "point_change": -2.3,
-      "percent_change": -0.64,
-      "total_qty": 13650,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 355.0,
+      "point_change": -3.3,
+      "percent_change": -0.92,
+      "total_qty": 27696,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MNMF1",
-      "ltp": 9.3,
-      "point_change": -0.05,
-      "percent_change": -0.53,
-      "total_qty": 1100,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.55,
+      "point_change": 0.2,
+      "percent_change": 2.14,
+      "total_qty": 1220,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MPFL",
-      "ltp": 590.0,
-      "point_change": -14.0,
-      "percent_change": -2.32,
-      "total_qty": 401,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 588.3,
+      "point_change": -15.7,
+      "percent_change": -2.6,
+      "total_qty": 2042,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MSHL",
-      "ltp": 561.0,
-      "point_change": -0.3,
-      "percent_change": -0.05,
-      "total_qty": 11,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 562.5,
+      "point_change": 1.2,
+      "percent_change": 0.21,
+      "total_qty": 485,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "MSLB",
-      "ltp": 1197.0,
-      "point_change": -28.0,
-      "percent_change": -2.29,
-      "total_qty": 73,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1201.0,
+      "point_change": -24.0,
+      "percent_change": -1.96,
+      "total_qty": 103,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NABBC",
       "ltp": 777.9,
       "point_change": 3.9,
       "percent_change": 0.5,
-      "total_qty": 453,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 478,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NABIL",
-      "ltp": 537.5,
-      "point_change": -3.1,
-      "percent_change": -0.57,
-      "total_qty": 9386,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 539.0,
+      "point_change": -1.6,
+      "percent_change": -0.3,
+      "total_qty": 15195,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NABILD2089",
-      "ltp": 1060.9,
-      "point_change": 30.9,
-      "percent_change": 3.0,
-      "total_qty": 12,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1087.9,
+      "point_change": 57.9,
+      "percent_change": 5.62,
+      "total_qty": 32,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NADEP",
-      "ltp": 699.6,
-      "point_change": -42.4,
-      "percent_change": -5.71,
-      "total_qty": 120,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 693.0,
+      "point_change": -49.0,
+      "percent_change": -6.6,
+      "total_qty": 140,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NBF2",
@@ -1312,47 +1360,55 @@
       "point_change": -0.29,
       "percent_change": -2.95,
       "total_qty": 200,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NBF3",
-      "ltp": 9.17,
-      "point_change": -0.53,
-      "percent_change": -5.46,
-      "total_qty": 300,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.31,
+      "point_change": -0.39,
+      "percent_change": -4.02,
+      "total_qty": 700,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NBL",
       "ltp": 273.0,
       "point_change": -1.8,
       "percent_change": -0.66,
-      "total_qty": 22500,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 45123,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "NCCD86",
+      "ltp": 1100.6,
+      "point_change": -9.4,
+      "percent_change": -0.85,
+      "total_qty": 30,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NESDO",
       "ltp": 1330.0,
       "point_change": -23.0,
       "percent_change": -1.7,
-      "total_qty": 197,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 278,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NFS",
-      "ltp": 525.1,
-      "point_change": -14.7,
-      "percent_change": -2.72,
-      "total_qty": 3800,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 531.0,
+      "point_change": -8.8,
+      "percent_change": -1.63,
+      "total_qty": 5081,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NGPL",
-      "ltp": 397.0,
-      "point_change": -7.0,
-      "percent_change": -1.73,
-      "total_qty": 56660,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 397.4,
+      "point_change": -6.6,
+      "percent_change": -1.63,
+      "total_qty": 71787,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NHDL",
@@ -1360,15 +1416,15 @@
       "point_change": -6.0,
       "percent_change": -0.96,
       "total_qty": 15,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NHPC",
-      "ltp": 256.7,
-      "point_change": -2.1,
-      "percent_change": -0.81,
-      "total_qty": 83733,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 254.5,
+      "point_change": -4.3,
+      "percent_change": -1.66,
+      "total_qty": 141007,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NIBD84",
@@ -1376,31 +1432,31 @@
       "point_change": -10.6,
       "percent_change": -1.03,
       "total_qty": 50,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NIBLGF",
-      "ltp": 9.05,
-      "point_change": 0.25,
-      "percent_change": 2.84,
-      "total_qty": 5000,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 8.79,
+      "point_change": -0.01,
+      "percent_change": -0.11,
+      "total_qty": 5100,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NIBSF2",
-      "ltp": 8.42,
-      "point_change": -0.11,
-      "percent_change": -1.29,
-      "total_qty": 700,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 8.5,
+      "point_change": -0.03,
+      "percent_change": -0.35,
+      "total_qty": 800,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NICA",
-      "ltp": 307.0,
-      "point_change": -1.3,
-      "percent_change": -0.42,
-      "total_qty": 14092,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 307.9,
+      "point_change": -0.4,
+      "percent_change": -0.13,
+      "total_qty": 28449,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NICBF",
@@ -1408,31 +1464,31 @@
       "point_change": 0.27,
       "percent_change": 2.99,
       "total_qty": 200,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NICFC",
-      "ltp": 8.89,
-      "point_change": -0.01,
-      "percent_change": -0.11,
-      "total_qty": 200,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 8.93,
+      "point_change": 0.03,
+      "percent_change": 0.34,
+      "total_qty": 300,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NICL",
-      "ltp": 475.0,
-      "point_change": -11.9,
-      "percent_change": -2.44,
-      "total_qty": 17008,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 468.0,
+      "point_change": -18.9,
+      "percent_change": -3.88,
+      "total_qty": 24597,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NICLBSL",
-      "ltp": 520.5,
-      "point_change": -12.5,
-      "percent_change": -2.35,
-      "total_qty": 1568,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 521.1,
+      "point_change": -11.9,
+      "percent_change": -2.23,
+      "total_qty": 6001,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NICSF",
@@ -1440,63 +1496,71 @@
       "point_change": -0.31,
       "percent_change": -3.58,
       "total_qty": 600,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NIFRA",
       "ltp": 240.0,
       "point_change": -1.8,
       "percent_change": -0.74,
-      "total_qty": 19533,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 43834,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NIL",
-      "ltp": 567.0,
-      "point_change": -19.0,
-      "percent_change": -3.24,
-      "total_qty": 4902,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 570.0,
+      "point_change": -16.0,
+      "percent_change": -2.73,
+      "total_qty": 8720,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NIMB",
-      "ltp": 185.0,
-      "point_change": -1.0,
-      "percent_change": -0.54,
-      "total_qty": 39053,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 184.7,
+      "point_change": -1.3,
+      "percent_change": -0.7,
+      "total_qty": 44780,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "NIMBPO",
+      "ltp": 139.1,
+      "point_change": -1.9,
+      "percent_change": -1.35,
+      "total_qty": 1222,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NLG",
-      "ltp": 525.0,
-      "point_change": -32.8,
-      "percent_change": -5.88,
-      "total_qty": 12577,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 529.0,
+      "point_change": -28.8,
+      "percent_change": -5.16,
+      "total_qty": 20823,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NLIC",
-      "ltp": 693.0,
-      "point_change": -13.9,
-      "percent_change": -1.97,
-      "total_qty": 16656,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 692.4,
+      "point_change": -14.5,
+      "percent_change": -2.05,
+      "total_qty": 21928,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NLICL",
-      "ltp": 560.5,
-      "point_change": -3.4,
-      "percent_change": -0.6,
-      "total_qty": 2307,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 551.4,
+      "point_change": -12.5,
+      "percent_change": -2.22,
+      "total_qty": 4974,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NMB",
-      "ltp": 237.9,
-      "point_change": -1.1,
-      "percent_change": -0.46,
-      "total_qty": 13453,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 237.7,
+      "point_change": -1.3,
+      "percent_change": -0.54,
+      "total_qty": 19031,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NMB50",
@@ -1504,63 +1568,71 @@
       "point_change": -0.01,
       "percent_change": -0.1,
       "total_qty": 10000,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NMBMF",
-      "ltp": 576.2,
-      "point_change": -17.8,
-      "percent_change": -3.0,
-      "total_qty": 639,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 580.0,
+      "point_change": -14.0,
+      "percent_change": -2.36,
+      "total_qty": 699,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "NMBUR93/94",
+      "ltp": 962.0,
+      "point_change": -28.0,
+      "percent_change": -2.83,
+      "total_qty": 75,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NMFBS",
-      "ltp": 1101.3,
-      "point_change": -8.7,
-      "percent_change": -0.78,
-      "total_qty": 764,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1103.0,
+      "point_change": -7.0,
+      "percent_change": -0.63,
+      "total_qty": 1135,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NMIC",
-      "ltp": 840.0,
-      "point_change": -25.0,
-      "percent_change": -2.89,
-      "total_qty": 827,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 843.0,
+      "point_change": -22.0,
+      "percent_change": -2.54,
+      "total_qty": 1141,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NMLBBL",
-      "ltp": 484.2,
-      "point_change": -7.7,
-      "percent_change": -1.57,
-      "total_qty": 180,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 490.0,
+      "point_change": -1.9,
+      "percent_change": -0.39,
+      "total_qty": 770,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NRIC",
-      "ltp": 884.0,
-      "point_change": -3.0,
-      "percent_change": -0.34,
-      "total_qty": 17189,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 879.0,
+      "point_change": -8.0,
+      "percent_change": -0.9,
+      "total_qty": 25712,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NRM",
-      "ltp": 295.1,
-      "point_change": -3.9,
-      "percent_change": -1.3,
-      "total_qty": 1965,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 294.9,
+      "point_change": -4.1,
+      "percent_change": -1.37,
+      "total_qty": 2995,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NRN",
-      "ltp": 1349.0,
-      "point_change": -10.0,
-      "percent_change": -0.74,
-      "total_qty": 8355,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1352.7,
+      "point_change": -6.3,
+      "percent_change": -0.46,
+      "total_qty": 12832,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NSIF2",
@@ -1568,71 +1640,79 @@
       "point_change": -0.09,
       "percent_change": -0.89,
       "total_qty": 4700,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NSY",
-      "ltp": 9.01,
-      "point_change": -0.19,
-      "percent_change": -2.07,
-      "total_qty": 1600,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.02,
+      "point_change": -0.18,
+      "percent_change": -1.96,
+      "total_qty": 1700,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NTC",
-      "ltp": 880.0,
-      "point_change": -3.0,
-      "percent_change": -0.34,
-      "total_qty": 2569,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 878.5,
+      "point_change": -4.5,
+      "percent_change": -0.51,
+      "total_qty": 3305,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NUBL",
-      "ltp": 572.1,
-      "point_change": -14.1,
-      "percent_change": -2.41,
-      "total_qty": 556,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 587.0,
+      "point_change": 0.8,
+      "percent_change": 0.14,
+      "total_qty": 978,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NWCL",
-      "ltp": 630.7,
-      "point_change": -0.3,
-      "percent_change": -0.05,
-      "total_qty": 670,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 620.5,
+      "point_change": -10.5,
+      "percent_change": -1.66,
+      "total_qty": 2363,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "NYADI",
-      "ltp": 345.0,
-      "point_change": -5.0,
-      "percent_change": -1.43,
-      "total_qty": 1340,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 349.2,
+      "point_change": -0.8,
+      "percent_change": -0.23,
+      "total_qty": 1670,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "OHL",
-      "ltp": 613.0,
-      "point_change": -15.0,
-      "percent_change": -2.39,
-      "total_qty": 215,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 617.0,
+      "point_change": -11.0,
+      "percent_change": -1.75,
+      "total_qty": 1007,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "OMPL",
-      "ltp": 877.0,
-      "point_change": 6.0,
-      "percent_change": 0.69,
-      "total_qty": 136,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 861.1,
+      "point_change": -9.9,
+      "percent_change": -1.14,
+      "total_qty": 166,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "PBD85",
+      "ltp": 1100.0,
+      "point_change": 0.0,
+      "percent_change": 0.0,
+      "total_qty": 210,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PCBL",
-      "ltp": 236.8,
-      "point_change": -2.2,
-      "percent_change": -0.92,
-      "total_qty": 14692,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 238.1,
+      "point_change": -0.9,
+      "percent_change": -0.38,
+      "total_qty": 20625,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PCBLP",
@@ -1640,127 +1720,127 @@
       "point_change": 2.0,
       "percent_change": 1.94,
       "total_qty": 308120,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PCIL",
-      "ltp": 587.5,
-      "point_change": -12.5,
-      "percent_change": -2.08,
-      "total_qty": 8043,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 594.0,
+      "point_change": -6.0,
+      "percent_change": -1.0,
+      "total_qty": 14614,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PHCL",
-      "ltp": 295.1,
-      "point_change": -3.6,
-      "percent_change": -1.21,
-      "total_qty": 34690,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 299.0,
+      "point_change": 0.3,
+      "percent_change": 0.1,
+      "total_qty": 44896,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PMHPL",
-      "ltp": 299.0,
-      "point_change": -12.7,
-      "percent_change": -4.07,
-      "total_qty": 2931,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 300.0,
+      "point_change": -11.7,
+      "percent_change": -3.75,
+      "total_qty": 3729,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PMLI",
-      "ltp": 409.0,
-      "point_change": -3.6,
-      "percent_change": -0.87,
-      "total_qty": 1233,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 405.2,
+      "point_change": -7.4,
+      "percent_change": -1.79,
+      "total_qty": 3293,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PPCL",
-      "ltp": 332.0,
-      "point_change": 2.3,
-      "percent_change": 0.7,
-      "total_qty": 840,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 326.0,
+      "point_change": -3.7,
+      "percent_change": -1.12,
+      "total_qty": 4419,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PPL",
-      "ltp": 303.0,
-      "point_change": -6.5,
-      "percent_change": -2.1,
-      "total_qty": 13947,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 302.1,
+      "point_change": -7.4,
+      "percent_change": -2.39,
+      "total_qty": 15077,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PRIN",
-      "ltp": 601.5,
-      "point_change": -38.5,
-      "percent_change": -6.02,
-      "total_qty": 8762,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 610.0,
+      "point_change": -30.0,
+      "percent_change": -4.69,
+      "total_qty": 13713,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PROFL",
-      "ltp": 382.2,
-      "point_change": -3.8,
-      "percent_change": -0.98,
-      "total_qty": 1792,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 382.0,
+      "point_change": -4.0,
+      "percent_change": -1.04,
+      "total_qty": 4227,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PRSF",
-      "ltp": 12.72,
-      "point_change": -0.03,
-      "percent_change": -0.24,
-      "total_qty": 17500,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 12.68,
+      "point_change": -0.07,
+      "percent_change": -0.55,
+      "total_qty": 296600,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PRVU",
       "ltp": 180.0,
       "point_change": -0.7,
       "percent_change": -0.39,
-      "total_qty": 66643,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 88952,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PSF",
       "ltp": 12.2,
       "point_change": 0.1,
       "percent_change": 0.83,
-      "total_qty": 34835,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 61295,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "PURE",
-      "ltp": 740.0,
-      "point_change": -26.0,
-      "percent_change": -3.39,
-      "total_qty": 2563,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 764.9,
+      "point_change": -1.1,
+      "percent_change": -0.14,
+      "total_qty": 3403,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RADHI",
-      "ltp": 690.0,
-      "point_change": -9.0,
-      "percent_change": -1.29,
-      "total_qty": 30549,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 694.0,
+      "point_change": -5.0,
+      "percent_change": -0.72,
+      "total_qty": 58998,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RAWA",
-      "ltp": 404.9,
-      "point_change": -8.0,
-      "percent_change": -1.94,
-      "total_qty": 4996,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 402.2,
+      "point_change": -10.7,
+      "percent_change": -2.59,
+      "total_qty": 10026,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RBBD2088",
-      "ltp": 1050.0,
-      "point_change": 20.0,
-      "percent_change": 1.94,
-      "total_qty": 25,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1055.0,
+      "point_change": 25.0,
+      "percent_change": 2.43,
+      "total_qty": 175,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RBBF40",
@@ -1768,7 +1848,7 @@
       "point_change": -0.05,
       "percent_change": -0.54,
       "total_qty": 12400,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RBCL",
@@ -1776,199 +1856,207 @@
       "point_change": -414.0,
       "percent_change": -2.93,
       "total_qty": 20,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "RBCLPO",
+      "ltp": 11299.0,
+      "point_change": 209.0,
+      "percent_change": 1.88,
+      "total_qty": 10,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RFPL",
-      "ltp": 326.0,
-      "point_change": -3.0,
-      "percent_change": -0.91,
-      "total_qty": 10191,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 330.0,
+      "point_change": 1.0,
+      "percent_change": 0.3,
+      "total_qty": 15030,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RHGCL",
       "ltp": 247.0,
       "point_change": -4.9,
       "percent_change": -1.95,
-      "total_qty": 4645,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 6032,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RHPL",
-      "ltp": 206.0,
-      "point_change": -35.4,
-      "percent_change": -14.66,
-      "total_qty": 349208,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 205.3,
+      "point_change": -36.1,
+      "percent_change": -14.95,
+      "total_qty": 526308,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RIDI",
-      "ltp": 345.9,
-      "point_change": -6.0,
-      "percent_change": -1.71,
-      "total_qty": 121736,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 347.2,
+      "point_change": -4.7,
+      "percent_change": -1.34,
+      "total_qty": 169588,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RLEL",
-      "ltp": 836.1,
-      "point_change": -38.8,
-      "percent_change": -4.43,
-      "total_qty": 6825,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 839.9,
+      "point_change": -35.0,
+      "percent_change": -4.0,
+      "total_qty": 8330,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RLFL",
-      "ltp": 426.9,
-      "point_change": -4.1,
-      "percent_change": -0.95,
-      "total_qty": 5980,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 432.9,
+      "point_change": 1.9,
+      "percent_change": 0.44,
+      "total_qty": 12093,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RMF1",
-      "ltp": 9.5,
-      "point_change": 0.13,
-      "percent_change": 1.39,
-      "total_qty": 500,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.4,
+      "point_change": 0.03,
+      "percent_change": 0.32,
+      "total_qty": 1100,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RNLI",
       "ltp": 415.0,
       "point_change": -5.6,
       "percent_change": -1.33,
-      "total_qty": 16117,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 29651,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RSDC",
-      "ltp": 614.0,
-      "point_change": -5.1,
-      "percent_change": -0.82,
-      "total_qty": 322,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 615.2,
+      "point_change": -3.9,
+      "percent_change": -0.63,
+      "total_qty": 1139,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RSML",
-      "ltp": 2720.0,
-      "point_change": -7.0,
-      "percent_change": -0.26,
-      "total_qty": 6129,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 2721.0,
+      "point_change": -6.0,
+      "percent_change": -0.22,
+      "total_qty": 12602,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RSY2",
       "ltp": 8.93,
       "point_change": -0.22,
       "percent_change": -2.4,
-      "total_qty": 1200,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 1600,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "RURU",
-      "ltp": 592.0,
-      "point_change": -2.0,
-      "percent_change": -0.34,
-      "total_qty": 236,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 595.0,
+      "point_change": 1.0,
+      "percent_change": 0.17,
+      "total_qty": 1113,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SABBL",
-      "ltp": 875.0,
-      "point_change": -11.6,
-      "percent_change": -1.31,
-      "total_qty": 2332,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 889.0,
+      "point_change": 2.4,
+      "percent_change": 0.27,
+      "total_qty": 3672,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SADBL",
-      "ltp": 404.9,
-      "point_change": -2.1,
-      "percent_change": -0.52,
-      "total_qty": 19287,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 402.8,
+      "point_change": -4.2,
+      "percent_change": -1.03,
+      "total_qty": 24355,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SAEF2",
-      "ltp": 9.1,
-      "point_change": 0.06,
-      "percent_change": 0.66,
-      "total_qty": 1300,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.04,
+      "point_change": 0.0,
+      "percent_change": 0.0,
+      "total_qty": 1800,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SAGAR",
-      "ltp": 1525.1,
-      "point_change": -24.8,
-      "percent_change": -1.6,
-      "total_qty": 1080,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1540.0,
+      "point_change": -9.9,
+      "percent_change": -0.64,
+      "total_qty": 1240,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SAHAS",
-      "ltp": 675.0,
-      "point_change": -10.0,
-      "percent_change": -1.46,
-      "total_qty": 59431,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 678.1,
+      "point_change": -6.9,
+      "percent_change": -1.01,
+      "total_qty": 88349,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SAIL",
-      "ltp": 955.0,
-      "point_change": -28.1,
-      "percent_change": -2.86,
-      "total_qty": 8239,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 956.0,
+      "point_change": -27.1,
+      "percent_change": -2.76,
+      "total_qty": 15822,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SALICO",
-      "ltp": 567.1,
-      "point_change": -16.9,
-      "percent_change": -2.89,
-      "total_qty": 13573,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 567.0,
+      "point_change": -17.0,
+      "percent_change": -2.91,
+      "total_qty": 16868,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SANIMA",
-      "ltp": 364.1,
-      "point_change": -6.6,
-      "percent_change": -1.78,
-      "total_qty": 38723,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 366.9,
+      "point_change": -3.8,
+      "percent_change": -1.03,
+      "total_qty": 47522,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SANVI",
-      "ltp": 557.5,
-      "point_change": -11.0,
-      "percent_change": -1.93,
-      "total_qty": 3403,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 565.0,
+      "point_change": -3.5,
+      "percent_change": -0.62,
+      "total_qty": 5266,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SAPDBL",
-      "ltp": 679.0,
-      "point_change": -20.0,
-      "percent_change": -2.86,
-      "total_qty": 6264,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 685.4,
+      "point_change": -13.6,
+      "percent_change": -1.95,
+      "total_qty": 8664,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SAPIL",
       "ltp": 1212.9,
       "point_change": 158.2,
       "percent_change": 15.0,
-      "total_qty": 960,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 1280,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SARBTM",
-      "ltp": 770.1,
-      "point_change": -9.9,
-      "percent_change": -1.27,
-      "total_qty": 1034,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 782.0,
+      "point_change": 2.0,
+      "percent_change": 0.26,
+      "total_qty": 2887,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SBCF",
@@ -1976,231 +2064,239 @@
       "point_change": 0.05,
       "percent_change": 0.54,
       "total_qty": 1000,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "SBD87",
+      "ltp": 1085.0,
+      "point_change": 0.0,
+      "percent_change": 0.0,
+      "total_qty": 36,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SBI",
-      "ltp": 403.0,
-      "point_change": -1.0,
-      "percent_change": -0.25,
-      "total_qty": 24150,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 395.3,
+      "point_change": -8.7,
+      "percent_change": -2.15,
+      "total_qty": 29292,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SBL",
-      "ltp": 410.3,
-      "point_change": -1.6,
-      "percent_change": -0.39,
-      "total_qty": 23954,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 408.3,
+      "point_change": -3.6,
+      "percent_change": -0.87,
+      "total_qty": 63961,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SCB",
       "ltp": 646.0,
       "point_change": -5.0,
       "percent_change": -0.77,
-      "total_qty": 312,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 1742,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SEF",
-      "ltp": 9.35,
-      "point_change": 0.07,
-      "percent_change": 0.75,
-      "total_qty": 10400,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.33,
+      "point_change": 0.05,
+      "percent_change": 0.54,
+      "total_qty": 15300,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SEF2",
-      "ltp": 9.03,
-      "point_change": -0.12,
-      "percent_change": -1.31,
-      "total_qty": 1500,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.05,
+      "point_change": -0.1,
+      "percent_change": -1.09,
+      "total_qty": 2000,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SFEF",
-      "ltp": 9.78,
-      "point_change": 0.14,
-      "percent_change": 1.45,
-      "total_qty": 300,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 9.7,
+      "point_change": 0.06,
+      "percent_change": 0.62,
+      "total_qty": 213700,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SGHC",
-      "ltp": 291.1,
-      "point_change": -9.1,
-      "percent_change": -3.03,
-      "total_qty": 25575,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 294.0,
+      "point_change": -6.2,
+      "percent_change": -2.07,
+      "total_qty": 33280,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SGHL",
-      "ltp": 502.5,
-      "point_change": -9.3,
-      "percent_change": -1.82,
-      "total_qty": 24872,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 505.8,
+      "point_change": -6.0,
+      "percent_change": -1.17,
+      "total_qty": 36492,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SGIC",
-      "ltp": 425.0,
-      "point_change": -13.0,
-      "percent_change": -2.97,
-      "total_qty": 12846,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 423.1,
+      "point_change": -14.9,
+      "percent_change": -3.4,
+      "total_qty": 18081,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SHEL",
-      "ltp": 290.5,
-      "point_change": -6.5,
-      "percent_change": -2.19,
-      "total_qty": 35757,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 293.0,
+      "point_change": -4.0,
+      "percent_change": -1.35,
+      "total_qty": 49790,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SHINE",
-      "ltp": 406.0,
-      "point_change": -3.0,
-      "percent_change": -0.73,
-      "total_qty": 2252,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 408.0,
+      "point_change": -1.0,
+      "percent_change": -0.24,
+      "total_qty": 5163,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SHINED",
-      "ltp": 1100.0,
-      "point_change": 0.0,
-      "percent_change": 0.0,
-      "total_qty": 25,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1125.0,
+      "point_change": 25.0,
+      "percent_change": 2.27,
+      "total_qty": 100,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SHIVM",
-      "ltp": 620.1,
-      "point_change": -1.3,
-      "percent_change": -0.21,
-      "total_qty": 22514,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 623.0,
+      "point_change": 1.6,
+      "percent_change": 0.26,
+      "total_qty": 43950,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SHL",
-      "ltp": 502.9,
-      "point_change": -6.0,
-      "percent_change": -1.18,
-      "total_qty": 1320,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 500.0,
+      "point_change": -8.9,
+      "percent_change": -1.75,
+      "total_qty": 8537,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SHLB",
-      "ltp": 1332.3,
-      "point_change": -19.7,
-      "percent_change": -1.46,
-      "total_qty": 70,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1333.8,
+      "point_change": -18.2,
+      "percent_change": -1.35,
+      "total_qty": 170,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SHPC",
       "ltp": 500.0,
       "point_change": -14.0,
       "percent_change": -2.72,
-      "total_qty": 46477,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 74366,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SICL",
-      "ltp": 583.0,
-      "point_change": -17.0,
-      "percent_change": -2.83,
-      "total_qty": 18377,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 581.0,
+      "point_change": -19.0,
+      "percent_change": -3.17,
+      "total_qty": 20630,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SIFC",
-      "ltp": 492.0,
-      "point_change": -3.0,
-      "percent_change": -0.61,
-      "total_qty": 3771,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 485.4,
+      "point_change": -9.6,
+      "percent_change": -1.94,
+      "total_qty": 4196,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SIGS3",
       "ltp": 10.85,
       "point_change": -0.15,
       "percent_change": -1.36,
-      "total_qty": 100,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 275800,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SIKLES",
-      "ltp": 566.9,
-      "point_change": 6.4,
-      "percent_change": 1.14,
-      "total_qty": 12205,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 562.0,
+      "point_change": 1.5,
+      "percent_change": 0.27,
+      "total_qty": 13692,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SINDU",
-      "ltp": 612.0,
-      "point_change": -7.0,
-      "percent_change": -1.13,
-      "total_qty": 1485,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 610.0,
+      "point_change": -9.0,
+      "percent_change": -1.45,
+      "total_qty": 2600,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SIPD",
-      "ltp": 586.0,
-      "point_change": -23.0,
-      "percent_change": -3.78,
-      "total_qty": 7945,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 590.0,
+      "point_change": -19.0,
+      "percent_change": -3.12,
+      "total_qty": 9196,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SJCL",
-      "ltp": 240.0,
-      "point_change": -21.1,
-      "percent_change": -8.08,
-      "total_qty": 112064,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 236.5,
+      "point_change": -24.6,
+      "percent_change": -9.42,
+      "total_qty": 144398,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SJLIC",
       "ltp": 400.1,
       "point_change": -3.9,
       "percent_change": -0.97,
-      "total_qty": 5685,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 6958,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SKBBL",
-      "ltp": 741.0,
-      "point_change": -5.0,
-      "percent_change": -0.67,
-      "total_qty": 3356,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 743.0,
+      "point_change": -3.0,
+      "percent_change": -0.4,
+      "total_qty": 7916,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SKHEL",
-      "ltp": 864.2,
-      "point_change": -38.8,
-      "percent_change": -4.3,
-      "total_qty": 790,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 866.5,
+      "point_change": -36.5,
+      "percent_change": -4.04,
+      "total_qty": 920,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SKHL",
-      "ltp": 750.0,
-      "point_change": -26.8,
-      "percent_change": -3.45,
-      "total_qty": 9006,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 762.8,
+      "point_change": -14.0,
+      "percent_change": -1.8,
+      "total_qty": 11758,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SLBBL",
-      "ltp": 784.0,
-      "point_change": -6.0,
-      "percent_change": -0.76,
-      "total_qty": 563,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 790.0,
+      "point_change": 0.0,
+      "percent_change": 0.0,
+      "total_qty": 578,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SLBSL",
@@ -2208,23 +2304,23 @@
       "point_change": -1.0,
       "percent_change": -0.11,
       "total_qty": 403,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SMATA",
-      "ltp": 691.0,
-      "point_change": 4.0,
-      "percent_change": 0.58,
-      "total_qty": 1936,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 695.0,
+      "point_change": 8.0,
+      "percent_change": 1.16,
+      "total_qty": 2037,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SMB",
-      "ltp": 1770.0,
-      "point_change": 11.0,
-      "percent_change": 0.63,
-      "total_qty": 10,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1760.0,
+      "point_change": 1.0,
+      "percent_change": 0.06,
+      "total_qty": 30,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SMFBS",
@@ -2232,31 +2328,31 @@
       "point_change": -65.1,
       "percent_change": -4.65,
       "total_qty": 39,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SMH",
-      "ltp": 504.0,
-      "point_change": -0.5,
-      "percent_change": -0.1,
-      "total_qty": 3047,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 500.4,
+      "point_change": -4.1,
+      "percent_change": -0.81,
+      "total_qty": 4669,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SMHL",
-      "ltp": 520.3,
-      "point_change": -4.5,
-      "percent_change": -0.86,
-      "total_qty": 50491,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 520.0,
+      "point_change": -4.8,
+      "percent_change": -0.91,
+      "total_qty": 68396,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SMJC",
-      "ltp": 426.9,
-      "point_change": -3.1,
-      "percent_change": -0.72,
-      "total_qty": 11734,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 421.2,
+      "point_change": -8.8,
+      "percent_change": -2.05,
+      "total_qty": 12495,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SMPDA",
@@ -2264,95 +2360,95 @@
       "point_change": 0.0,
       "percent_change": 0.0,
       "total_qty": 494,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SNLI",
-      "ltp": 388.0,
-      "point_change": -7.1,
-      "percent_change": -1.8,
-      "total_qty": 11038,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 386.4,
+      "point_change": -8.7,
+      "percent_change": -2.2,
+      "total_qty": 19182,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SNORL",
-      "ltp": 890.8,
-      "point_change": -19.2,
-      "percent_change": -2.11,
-      "total_qty": 2504,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 895.4,
+      "point_change": -14.6,
+      "percent_change": -1.6,
+      "total_qty": 3453,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SOHL",
-      "ltp": 667.1,
-      "point_change": -11.9,
-      "percent_change": -1.75,
-      "total_qty": 40248,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 670.0,
+      "point_change": -9.0,
+      "percent_change": -1.33,
+      "total_qty": 71207,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SONA",
-      "ltp": 387.1,
-      "point_change": 2.0,
-      "percent_change": 0.52,
-      "total_qty": 16337,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 388.5,
+      "point_change": 3.4,
+      "percent_change": 0.88,
+      "total_qty": 21386,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SOPL",
-      "ltp": 743.0,
-      "point_change": -5.0,
-      "percent_change": -0.67,
-      "total_qty": 3556,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 742.0,
+      "point_change": -6.0,
+      "percent_change": -0.8,
+      "total_qty": 7959,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SPC",
-      "ltp": 393.1,
-      "point_change": -11.8,
-      "percent_change": -2.91,
-      "total_qty": 490,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 393.2,
+      "point_change": -11.7,
+      "percent_change": -2.89,
+      "total_qty": 945,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SPDL",
-      "ltp": 352.0,
-      "point_change": -7.5,
-      "percent_change": -2.09,
-      "total_qty": 6839,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 353.0,
+      "point_change": -6.5,
+      "percent_change": -1.81,
+      "total_qty": 13225,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SPHL",
-      "ltp": 526.0,
-      "point_change": -54.0,
-      "percent_change": -9.31,
-      "total_qty": 6780,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 528.6,
+      "point_change": -51.4,
+      "percent_change": -8.86,
+      "total_qty": 7897,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SPIL",
       "ltp": 650.0,
       "point_change": -16.0,
       "percent_change": -2.4,
-      "total_qty": 5816,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 6105,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SPL",
-      "ltp": 615.0,
-      "point_change": -15.0,
-      "percent_change": -2.38,
-      "total_qty": 270,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 616.0,
+      "point_change": -14.0,
+      "percent_change": -2.22,
+      "total_qty": 280,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SRLI",
-      "ltp": 360.0,
-      "point_change": -5.8,
-      "percent_change": -1.59,
-      "total_qty": 15731,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 355.7,
+      "point_change": -10.1,
+      "percent_change": -2.76,
+      "total_qty": 33008,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SRLIP",
@@ -2360,215 +2456,223 @@
       "point_change": -10.4,
       "percent_change": -5.0,
       "total_qty": 27138,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SSHL",
-      "ltp": 194.0,
-      "point_change": -2.8,
-      "percent_change": -1.42,
-      "total_qty": 41783,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 194.9,
+      "point_change": -1.9,
+      "percent_change": -0.97,
+      "total_qty": 64096,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SWASTIK",
-      "ltp": 1980.0,
-      "point_change": 49.8,
-      "percent_change": 2.58,
-      "total_qty": 80,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1960.0,
+      "point_change": 29.8,
+      "percent_change": 1.54,
+      "total_qty": 240,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SWBBL",
-      "ltp": 660.5,
-      "point_change": -10.0,
-      "percent_change": -1.49,
-      "total_qty": 1836,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 668.0,
+      "point_change": -2.5,
+      "percent_change": -0.37,
+      "total_qty": 2423,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SWMF",
-      "ltp": 581.1,
-      "point_change": -13.4,
-      "percent_change": -2.25,
-      "total_qty": 1072,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 589.0,
+      "point_change": -5.5,
+      "percent_change": -0.93,
+      "total_qty": 1126,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "SYPNL",
-      "ltp": 1222.5,
-      "point_change": -19.4,
-      "percent_change": -1.56,
-      "total_qty": 7931,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 1230.0,
+      "point_change": -11.9,
+      "percent_change": -0.96,
+      "total_qty": 12599,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "TAMOR",
-      "ltp": 475.5,
-      "point_change": -4.9,
-      "percent_change": -1.02,
-      "total_qty": 139873,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 477.1,
+      "point_change": -3.3,
+      "percent_change": -0.69,
+      "total_qty": 147818,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "TPC",
-      "ltp": 351.0,
-      "point_change": -2.0,
-      "percent_change": -0.57,
-      "total_qty": 5017,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 352.0,
+      "point_change": -1.0,
+      "percent_change": -0.28,
+      "total_qty": 8489,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "TPKHL",
-      "ltp": 510.0,
-      "point_change": -19.0,
-      "percent_change": -3.59,
-      "total_qty": 11652,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 512.5,
+      "point_change": -16.5,
+      "percent_change": -3.12,
+      "total_qty": 15132,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "TRH",
-      "ltp": 799.0,
-      "point_change": 5.0,
-      "percent_change": 0.63,
-      "total_qty": 100,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 794.9,
+      "point_change": 0.9,
+      "percent_change": 0.11,
+      "total_qty": 233,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "TSHL",
-      "ltp": 335.0,
-      "point_change": -5.9,
-      "percent_change": -1.73,
-      "total_qty": 680,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 339.0,
+      "point_change": -1.9,
+      "percent_change": -0.56,
+      "total_qty": 2091,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "TTL",
-      "ltp": 695.9,
-      "point_change": -1.1,
-      "percent_change": -0.16,
-      "total_qty": 1639,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 692.1,
+      "point_change": -4.9,
+      "percent_change": -0.7,
+      "total_qty": 3208,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "TVCL",
-      "ltp": 406.5,
-      "point_change": -41.5,
-      "percent_change": -9.26,
-      "total_qty": 39379,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 405.0,
+      "point_change": -43.0,
+      "percent_change": -9.6,
+      "total_qty": 45628,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "UAIL",
-      "ltp": 401.1,
-      "point_change": -14.9,
-      "percent_change": -3.58,
-      "total_qty": 11139,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 404.0,
+      "point_change": -12.0,
+      "percent_change": -2.88,
+      "total_qty": 12371,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "UHEWA",
-      "ltp": 590.0,
-      "point_change": -14.0,
-      "percent_change": -2.32,
-      "total_qty": 21184,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 584.0,
+      "point_change": -20.0,
+      "percent_change": -3.31,
+      "total_qty": 41129,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ULBSL",
-      "ltp": 2465.0,
-      "point_change": 15.0,
-      "percent_change": 0.61,
-      "total_qty": 411,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 2442.0,
+      "point_change": -8.0,
+      "percent_change": -0.33,
+      "total_qty": 701,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "ULHC",
-      "ltp": 311.5,
-      "point_change": -8.5,
-      "percent_change": -2.66,
-      "total_qty": 4092,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 310.0,
+      "point_change": -10.0,
+      "percent_change": -3.12,
+      "total_qty": 6327,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "UMHL",
-      "ltp": 566.9,
-      "point_change": -0.9,
-      "percent_change": -0.16,
-      "total_qty": 10960,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 560.1,
+      "point_change": -7.7,
+      "percent_change": -1.36,
+      "total_qty": 16240,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "UMRH",
-      "ltp": 512.0,
-      "point_change": -10.0,
-      "percent_change": -1.92,
-      "total_qty": 5257,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 513.7,
+      "point_change": -8.3,
+      "percent_change": -1.59,
+      "total_qty": 5593,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "UNHPL",
-      "ltp": 349.1,
-      "point_change": -12.9,
-      "percent_change": -3.56,
-      "total_qty": 12569,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 351.6,
+      "point_change": -10.4,
+      "percent_change": -2.87,
+      "total_qty": 12899,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
+    },
+    {
+      "symbol": "UNLB",
+      "ltp": 1216.0,
+      "point_change": -33.0,
+      "percent_change": -2.64,
+      "total_qty": 10,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "UPCL",
-      "ltp": 333.1,
-      "point_change": -4.9,
-      "percent_change": -1.45,
-      "total_qty": 9516,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 332.5,
+      "point_change": -5.5,
+      "percent_change": -1.63,
+      "total_qty": 17083,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "UPPER",
-      "ltp": 186.1,
-      "point_change": -2.9,
-      "percent_change": -1.53,
-      "total_qty": 45461,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 186.3,
+      "point_change": -2.7,
+      "percent_change": -1.43,
+      "total_qty": 67000,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "USHEC",
       "ltp": 489.0,
       "point_change": -9.0,
       "percent_change": -1.81,
-      "total_qty": 6725,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "total_qty": 9825,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "USHL",
-      "ltp": 515.7,
-      "point_change": -4.3,
-      "percent_change": -0.83,
-      "total_qty": 284,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 524.0,
+      "point_change": 4.0,
+      "percent_change": 0.77,
+      "total_qty": 1671,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "USLB",
-      "ltp": 1000.0,
-      "point_change": -19.9,
-      "percent_change": -1.95,
-      "total_qty": 175,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 999.9,
+      "point_change": -20.0,
+      "percent_change": -1.96,
+      "total_qty": 295,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "VLBS",
-      "ltp": 630.0,
-      "point_change": -5.2,
-      "percent_change": -0.82,
-      "total_qty": 130,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 631.0,
+      "point_change": -4.2,
+      "percent_change": -0.66,
+      "total_qty": 340,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "VLUCL",
-      "ltp": 383.0,
-      "point_change": -1.0,
-      "percent_change": -0.26,
-      "total_qty": 2309,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 379.0,
+      "point_change": -5.0,
+      "percent_change": -1.3,
+      "total_qty": 2848,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "WNLB",
@@ -2576,15 +2680,15 @@
       "point_change": -0.8,
       "percent_change": -0.07,
       "total_qty": 20,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     },
     {
       "symbol": "YMHL",
-      "ltp": 570.2,
-      "point_change": -15.8,
-      "percent_change": -2.7,
-      "total_qty": 4061,
-      "updated_at": "2026-08-26T06:40:53.272816+00:00"
+      "ltp": 571.4,
+      "point_change": -14.6,
+      "percent_change": -2.49,
+      "total_qty": 5481,
+      "updated_at": "2026-08-26T07:32:04.743133+00:00"
     }
   ]
 }
