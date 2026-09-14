@@ -37,3 +37,34 @@ jobs:
           git add frontend/data.json
           git diff --cached --quiet || git commit -m "Update NEPSE price snapshot"
           git push
+
+  ipo-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r scraper/requirements-supabase.txt
+
+      - name: Sync IPO alerts to Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python scraper/scrape_ipo.py
+
+      - name: Send Telegram IPO alerts
+        if: ${{ secrets.TELEGRAM_BOT_TOKEN != '' }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          python scraper/telegram_bot.py --send-alerts
+          python scraper/telegram_bot.py --send-reminders

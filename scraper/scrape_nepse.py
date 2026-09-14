@@ -13,10 +13,15 @@ from closePrice vs previousDayClosePrice.
 import os
 import argparse
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from nepse_scraper import NepseScraper
+
+try:
+    from scraper.technical_signal import compute_symbol_signal
+except ImportError:  # pragma: no cover
+    from technical_signal import compute_symbol_signal
 
 
 def get_supabase():
@@ -69,6 +74,42 @@ def write_static_data(output_path: str, is_open: bool, rows: list[dict], updated
     print(f"Wrote {len(rows)} prices to {path}.")
 
 
+def refresh_symbol_signals(supabase, now_iso: str):
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=90)).isoformat()
+    response = supabase.table("nepse_price_history").select("symbol,ltp,total_qty,recorded_at").gte("recorded_at", cutoff).order("symbol").order("recorded_at").execute()
+    rows = getattr(response, "data", []) or []
+    grouped: dict[str, list[dict]] = {}
+    for row in rows:
+        symbol = str(row.get("symbol") or "").upper()
+        if not symbol:
+            continue
+        grouped.setdefault(symbol, []).append({
+            "symbol": symbol,
+            "ltp": row.get("ltp"),
+            "total_qty": row.get("total_qty"),
+            "recorded_at": row.get("recorded_at"),
+        })
+
+    signal_rows = []
+    for symbol, symbol_rows in grouped.items():
+        signal = compute_symbol_signal(symbol_rows)
+        signal_rows.append({
+            "symbol": symbol,
+            "label": signal["label"],
+            "sma5": signal["sma5"],
+            "sma20": signal["sma20"],
+            "rsi14": signal["rsi14"],
+            "volume_spike_pct": signal["volume_spike_pct"],
+            "note": signal["note"],
+            "updated_at": now_iso,
+        })
+
+    if signal_rows:
+        supabase.table("symbol_signal").upsert(signal_rows, on_conflict="symbol").execute()
+
+    return len(signal_rows)
+
+
 def sync_supabase(supabase, is_open: bool, snapshot_rows: list[dict], now_iso: str):
     history_rows = [
         {
@@ -76,6 +117,7 @@ def sync_supabase(supabase, is_open: bool, snapshot_rows: list[dict], now_iso: s
             "ltp": row["ltp"],
             "point_change": row["point_change"],
             "percent_change": row["percent_change"],
+            "total_qty": row.get("total_qty"),
             "recorded_at": now_iso,
         }
         for row in snapshot_rows
@@ -94,8 +136,9 @@ def sync_supabase(supabase, is_open: bool, snapshot_rows: list[dict], now_iso: s
             history_rows[i:i + chunk_size]
         ).execute()
 
+    signal_count = refresh_symbol_signals(supabase, now_iso)
     print(
-        f"Synced {len(snapshot_rows)} snapshots and {len(history_rows)} history rows to Supabase."
+        f"Synced {len(snapshot_rows)} snapshots, {len(history_rows)} history rows, and {signal_count} technical signals to Supabase."
     )
 
 

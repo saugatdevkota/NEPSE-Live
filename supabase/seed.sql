@@ -1,0 +1,2 @@
+-- Local seed data for Supabase CLI development.
+-- This file is intentionally empty so that local reset starts clean.

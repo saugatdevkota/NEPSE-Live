@@ -89,6 +89,82 @@
 
   main { max-width: 1000px; margin: 0 auto; padding: 28px; }
 
+  .portfolio-panel {
+    margin-bottom: 28px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 20px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+
+  .portfolio-header h2 {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .account-picker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+  }
+
+  .account-picker select {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 8px 10px;
+    min-width: 210px;
+  }
+
+  .portfolio-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .summary-box {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    padding: 14px 16px;
+  }
+
+  .summary-box .label {
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .summary-box .value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .portfolio-table-wrap {
+    padding: 0 20px 20px;
+  }
+
   .table-wrap {
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -221,6 +297,59 @@
 </header>
 
 <main>
+  <section class="portfolio-panel" id="portfolio-panel">
+    <div class="portfolio-header">
+      <h2>Portfolio</h2>
+      <div class="account-picker">
+        <label for="account-select">Account</label>
+        <select id="account-select">
+          <option value="">Select account</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="portfolio-summary" id="portfolio-summary">
+      <div class="summary-box">
+        <div class="label">Total Value</div>
+        <div class="value" id="portfolio-value">—</div>
+      </div>
+      <div class="summary-box">
+        <div class="label">Total Invested</div>
+        <div class="value" id="portfolio-invested">—</div>
+      </div>
+      <div class="summary-box">
+        <div class="label">Total P/L</div>
+        <div class="value" id="portfolio-pl">—</div>
+      </div>
+      <div class="summary-box">
+        <div class="label">% Return</div>
+        <div class="value" id="portfolio-return">—</div>
+      </div>
+    </div>
+
+    <div class="portfolio-table-wrap">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Qty</th>
+              <th>Avg Cost</th>
+              <th>LTP</th>
+              <th>Value</th>
+              <th>P/L</th>
+              <th>%</th>
+              <th>Technical Heuristic</th>
+            </tr>
+          </thead>
+          <tbody id="portfolio-rows">
+            <tr><td colspan="8" class="empty-state">Select an account to view holdings.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <div class="table-wrap">
     <table>
       <thead>
@@ -231,10 +360,11 @@
           <th>Change</th>
           <th>% Chg</th>
           <th>Qty</th>
+          <th>Technical Heuristic</th>
         </tr>
       </thead>
       <tbody id="rows">
-        <tr><td colspan="6" class="empty-state">Loading&hellip;</td></tr>
+        <tr><td colspan="7" class="empty-state">Loading&hellip;</td></tr>
       </tbody>
     </table>
   </div>
@@ -263,10 +393,32 @@
   const HAS_SUPABASE = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
   const REFRESH_MS = 30000;
   const previousPrices = {};
+  const portfolioState = {
+    accounts: [],
+    holdings: [],
+    selectedAccountId: null,
+  };
+  const signalMap = {};
   let watchlistOnly = false;
   let chartInstance = null;
   let latestRows = [];
   let chartRequestId = 0;
+
+  function makeSignalCell(symbol) {
+    const signal = signalMap[symbol];
+    if (!signal) {
+      const td = document.createElement("td");
+      td.textContent = "—";
+      td.title = "Technical heuristic unavailable";
+      return td;
+    }
+    const td = document.createElement("td");
+    const labelClass = signal.label === "Potential Buy" ? "up" : signal.label === "Potential Sell" ? "down" : "flat";
+    const note = signal.note || "";
+    td.innerHTML = `<span class="${labelClass}">${signal.label}</span><br><small>${signal.sma5 ?? "—"} / ${signal.sma20 ?? "—"} SMA · RSI ${signal.rsi14 ?? "—"} · Vol ${signal.volume_spike_pct ?? "—"}%</small>`;
+    td.title = `Technical heuristic: ${note} (not financial advice)`;
+    return td;
+  }
 
   // --- Watchlist, stored in this browser only (localStorage) ---
   function getWatchlist() {
@@ -302,6 +454,111 @@
     return res.json();
   }
 
+  async function fetchAccounts() {
+    if (!HAS_SUPABASE) return;
+    const rows = await fetchJson(
+      `${SUPABASE_URL}/rest/v1/accounts?select=id,name,boid&order=created_at.asc`,
+      { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
+    );
+    portfolioState.accounts = Array.isArray(rows) ? rows : [];
+    const accountSelect = document.getElementById("account-select");
+    accountSelect.innerHTML = '<option value="">Select account</option>';
+    portfolioState.accounts.forEach(account => {
+      const option = document.createElement("option");
+      option.value = String(account.id);
+      option.textContent = `${account.name} (${account.boid})`;
+      accountSelect.appendChild(option);
+    });
+    if (!portfolioState.selectedAccountId && portfolioState.accounts.length) {
+      portfolioState.selectedAccountId = String(portfolioState.accounts[0].id);
+      accountSelect.value = portfolioState.selectedAccountId;
+    }
+    if (portfolioState.selectedAccountId) {
+      accountSelect.value = String(portfolioState.selectedAccountId);
+    }
+  }
+
+  async function fetchHoldingsForAccount(accountId) {
+    if (!HAS_SUPABASE || !accountId) {
+      portfolioState.holdings = [];
+      renderPortfolioRows();
+      return;
+    }
+    const rows = await fetchJson(
+      `${SUPABASE_URL}/rest/v1/holdings?account_id=eq.${encodeURIComponent(accountId)}&select=*&order=symbol.asc`,
+      { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
+    );
+    portfolioState.holdings = Array.isArray(rows) ? rows : [];
+    renderPortfolioRows();
+  }
+
+  function formatCurrency(value) {
+    if (value === null || value === undefined || value === "") return "—";
+    const n = Number(value);
+    return Number.isFinite(n) ? n.toLocaleString("en-US", { maximumFractionDigits: 2 }) : "—";
+  }
+
+  function renderPortfolioRows() {
+    const tbody = document.getElementById("portfolio-rows");
+    if (!portfolioState.selectedAccountId || !portfolioState.holdings.length) {
+      tbody.innerHTML = '<tr><td colspan="7" class="empty-state">No holdings found for this account.</td></tr>';
+      document.getElementById("portfolio-value").textContent = "—";
+      document.getElementById("portfolio-invested").textContent = "—";
+      document.getElementById("portfolio-pl").textContent = "—";
+      document.getElementById("portfolio-return").textContent = "—";
+      return;
+    }
+
+    let totalValue = 0;
+    let totalInvested = 0;
+
+    tbody.innerHTML = "";
+    portfolioState.holdings.forEach(holding => {
+      const match = latestRows.find(row => row.symbol === holding.symbol);
+      const ltp = match ? Number(match.ltp ?? match.lastUpdatedPrice ?? 0) : 0;
+      const qty = Number(holding.quantity || 0);
+      const avgCost = Number(holding.avg_cost || 0);
+      const value = qty * ltp;
+      const pnl = value - (qty * avgCost);
+      totalValue += value;
+      totalInvested += qty * avgCost;
+
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td class="symbol">${holding.symbol}</td>
+        <td>${formatNum(qty)}</td>
+        <td>${formatCurrency(avgCost)}</td>
+        <td>${formatCurrency(ltp)}</td>
+        <td>${formatCurrency(value)}</td>
+        <td class="${pnl >= 0 ? "up" : "down"}">${formatCurrency(pnl)}</td>
+        <td class="${avgCost ? (pnl >= 0 ? "up" : "down") : "flat"}">${avgCost ? `${formatNum(((ltp - avgCost) / avgCost) * 100)}%` : "—"}</td>
+      `;
+      const signalCell = makeSignalCell(holding.symbol);
+      tr.appendChild(signalCell);
+      tr.addEventListener("click", () => openChart(holding.symbol));
+      tbody.appendChild(tr);
+    });
+
+    const totalPnl = totalValue - totalInvested;
+    const totalReturn = totalInvested ? (totalPnl / totalInvested) * 100 : 0;
+    document.getElementById("portfolio-value").textContent = formatCurrency(totalValue);
+    document.getElementById("portfolio-invested").textContent = formatCurrency(totalInvested);
+    document.getElementById("portfolio-pl").textContent = `${formatCurrency(totalPnl)}`;
+    document.getElementById("portfolio-return").textContent = `${formatNum(totalReturn)}%`;
+    document.getElementById("portfolio-pl").className = totalPnl >= 0 ? "value up" : "value down";
+    document.getElementById("portfolio-return").className = totalReturn >= 0 ? "value up" : "value down";
+  }
+
+  function updateSelectedAccount(accountId) {
+    portfolioState.selectedAccountId = accountId || null;
+    if (accountId) {
+      fetchHoldingsForAccount(accountId);
+    } else {
+      portfolioState.holdings = [];
+      renderPortfolioRows();
+    }
+  }
+
   function updateMarketStatus(isOpen, updatedAt) {
     const pulse = document.getElementById("pulse");
     const statusText = document.getElementById("status-text");
@@ -320,6 +577,7 @@
     latestRows = data.prices;
     updateMarketStatus(data.is_open, data.updated_at);
     renderRows(latestRows);
+    renderPortfolioRows();
   }
 
   async function fetchStatus() {
@@ -340,6 +598,23 @@
     if (!Array.isArray(rows)) throw new Error("Unexpected price response from Supabase");
     latestRows = rows;
     renderRows(latestRows);
+  }
+
+  async function fetchSignals() {
+    if (!HAS_SUPABASE) {
+      Object.keys(signalMap).forEach(key => delete signalMap[key]);
+      return;
+    }
+    const rows = await fetchJson(
+      `${SUPABASE_URL}/rest/v1/symbol_signal?select=*&order=symbol.asc`,
+      { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
+    );
+    Object.keys(signalMap).forEach(key => delete signalMap[key]);
+    (Array.isArray(rows) ? rows : []).forEach(row => {
+      if (row && row.symbol) signalMap[row.symbol] = row;
+    });
+    renderRows(latestRows);
+    renderPortfolioRows();
   }
 
   function renderRows(rows) {
@@ -377,7 +652,8 @@
         makeCell(formatNum(r.ltp), "ltp-cell"),
         makeCell(`${arrow}${arrow ? " " : ""}${formatNum(r.point_change)}`, changeClass),
         makeCell(r.percent_change == null ? "—" : `${formatNum(r.percent_change)}%`, changeClass),
-        makeCell(formatNum(r.total_qty))
+        makeCell(formatNum(r.total_qty)),
+        makeSignalCell(String(r.symbol ?? ""))
       );
 
       const prev = previousPrices[r.symbol];
@@ -445,9 +721,18 @@
 
     let history;
     try {
-      const encodedSymbol = encodeURIComponent(symbol);
+      const symbolsForHistory = portfolioState.selectedAccountId
+        ? portfolioState.holdings.map(h => h.symbol)
+        : [symbol];
+      const encodedSymbols = symbolsForHistory
+        .filter(Boolean)
+        .map(item => encodeURIComponent(item))
+        .join(",");
+      const filter = symbolsForHistory.length > 1
+        ? `symbol=in.(${encodedSymbols})`
+        : `symbol=eq.${encodeURIComponent(symbol)}`;
       history = await fetchJson(
-        `${SUPABASE_URL}/rest/v1/nepse_price_history?symbol=eq.${encodedSymbol}&select=ltp,recorded_at&order=recorded_at.desc&limit=500`,
+        `${SUPABASE_URL}/rest/v1/nepse_price_history?${filter}&select=symbol,ltp,recorded_at&order=recorded_at.asc&limit=500`,
         { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` }
       );
     } catch (error) {
@@ -461,8 +746,6 @@
       container.textContent = "Received an unexpected history response.";
       return;
     }
-    history.reverse();
-
     if (!history.length) {
       if (chartInstance) {
         chartInstance.destroy();
@@ -471,6 +754,24 @@
       container.textContent = `No history yet for ${symbol} — check back after the scraper has run a few times.`;
       return;
     }
+
+    const uniqueSymbols = [...new Set(history.map(h => h.symbol).filter(Boolean))];
+    const datasets = uniqueSymbols.map((name, index) => {
+      const values = history
+        .filter(h => h.symbol === name)
+        .map(h => ({ x: new Date(h.recorded_at), y: Number(h.ltp) }));
+      return {
+        label: name,
+        data: values,
+        borderColor: ["#E8B84B", "#2FBF71", "#E5484D", "#8AB4F8", "#D8B4FE"][index % 5],
+        backgroundColor: "rgba(232,184,75,0.08)",
+        borderWidth: 1.5,
+        pointRadius: 0,
+        tension: 0.15,
+        fill: false,
+      };
+    });
+
     container.className = "";
     container.textContent = "";
     const canvas = document.createElement("canvas");
@@ -478,33 +779,17 @@
     canvas.height = 220;
     container.appendChild(canvas);
 
-    const labels = history.map(h => new Date(h.recorded_at).toLocaleString("en-US", {
-      month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"
-    }));
-    const values = history.map(h => h.ltp);
-
     if (chartInstance) chartInstance.destroy();
     const ctx = canvas.getContext("2d");
     chartInstance = new Chart(ctx, {
       type: "line",
-      data: {
-        labels,
-        datasets: [{
-          label: `${symbol} LTP`,
-          data: values,
-          borderColor: "#E8B84B",
-          backgroundColor: "rgba(232,184,75,0.08)",
-          borderWidth: 1.5,
-          pointRadius: 0,
-          tension: 0.15,
-          fill: true,
-        }]
-      },
+      data: { datasets },
       options: {
         responsive: true,
-        plugins: { legend: { display: false } },
+        parsing: false,
+        plugins: { legend: { display: uniqueSymbols.length > 1, labels: { color: "#E8E6E1" } } },
         scales: {
-          x: { ticks: { color: "#8B92A0", maxTicksLimit: 6 }, grid: { color: "#2A2F3A" } },
+          x: { type: "time", time: { unit: "minute" }, ticks: { color: "#8B92A0" }, grid: { color: "#2A2F3A" } },
           y: { ticks: { color: "#8B92A0" }, grid: { color: "#2A2F3A" } }
         }
       }
@@ -526,6 +811,10 @@
     watchlistOnly = !watchlistOnly;
     document.getElementById("watchlist-toggle").classList.toggle("active", watchlistOnly);
     renderRows(latestRows);
+  });
+
+  document.getElementById("account-select").addEventListener("change", (event) => {
+    updateSelectedAccount(event.target.value || null);
   });
 
   async function tick() {
@@ -560,7 +849,18 @@
     }
   }
 
-  tick();
+  async function bootstrap() {
+    if (HAS_SUPABASE) {
+      await fetchAccounts();
+      await fetchSignals();
+      if (portfolioState.selectedAccountId) {
+        await fetchHoldingsForAccount(portfolioState.selectedAccountId);
+      }
+    }
+    await tick();
+  }
+
+  bootstrap();
   setInterval(tick, REFRESH_MS);
 </script>
 
